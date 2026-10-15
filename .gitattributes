@@ -1,0 +1,5 @@
+# Keep generated SVG one-per-line-stable for readable diffs and skip language
+# statistics that would otherwise swamp the repository's language breakdown.
+*.svg   linguist-vendored diff=html
+data/*.json linguist-generated
+site/fonts.css linguist-vendored

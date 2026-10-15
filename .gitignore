@@ -1,0 +1,18 @@
+# Local QA renders — never committed (the SVGs themselves are the source of truth).
+preview/
+*.png
+!assets/**/*.png
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node, if you use it for tooling
+node_modules/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
