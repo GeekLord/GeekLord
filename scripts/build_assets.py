@@ -411,7 +411,7 @@ def build_toolkit() -> str:
 MILESTONES = [
     ("2005", "Cyber Mitra Solutions", "Engineering practice founded in Lucknow, India."),
     ("2010", "Hello, GitHub", "GeekLord account created — 16 years of public work."),
-    ("2013", "Morsel platform", "Research web platform serving studies at national scale."),
+    ("2013", "Morsel platform", "Research hub for ~400 national studies."),
     ("2018", "Field data at scale", "SurveyCTO / ODK instruments for 12+ countries."),
     ("2021", "Souters LMS", "London executive-training portal, 99.9% uptime."),
     ("2026", "Agentic AI practice", "Grounded RAG and evaluated agent pipelines."),
