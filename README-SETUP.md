@@ -23,6 +23,7 @@ site/            the interactive micro-site (optional, see below)
 | `scripts/build_site.py` | Renders `site/index.html` and subsets the web fonts to the glyphs the page actually uses. |
 | `scripts/check.py` | Guardrails — fails the build if any asset becomes broken, non-self-contained or references a missing file. |
 | `scripts/fonts/` | Space Grotesk and JetBrains Mono (SIL OFL), committed so builds are reproducible and offline. |
+| `requirements.txt` | `fonttools` + `brotli` — the only third-party dependencies. |
 | `.github/workflows/update-profile.yml` | Runs the whole chain daily at 03:17 UTC and commits the diff. |
 
 ## Local commands
@@ -35,10 +36,11 @@ make serve    # preview the micro-site at http://localhost:8080
 make all      # data + assets + check
 ```
 
-Python 3.11+ with `fonttools` and `brotli` is all that is required:
+Python 3.11+ is all that is required, plus the two libraries used to subset and
+embed fonts (declared in `requirements.txt`):
 
 ```bash
-pip install fonttools brotli
+pip install -r requirements.txt
 ```
 
 ## Two rules the generators follow

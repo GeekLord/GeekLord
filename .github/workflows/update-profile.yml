@@ -45,9 +45,9 @@ jobs:
           cache: pip
 
       - name: Install font tooling
-        # fonttools + brotli are needed to subset and embed the typefaces that
-        # go inside the SVGs; everything else is the standard library.
-        run: python -m pip install --disable-pip-version-check fonttools brotli
+        # fonttools + brotli subset and embed the typefaces that go inside the
+        # SVGs; everything else is the standard library.
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
       - name: Read live GitHub data
         env:
