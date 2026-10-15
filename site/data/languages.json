@@ -1,82 +1,82 @@
 {
-  "generated_at": "2026-10-15T04:30:41+00:00",
+  "generated_at": "2026-10-15T04:33:43+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
       "name": "Python",
       "repos": 6,
-      "share": 24.0,
+      "share": 23.08,
       "detail": "6 repos",
-      "bytes": 672904
+      "bytes": 774463
     },
     {
       "name": "JavaScript",
       "repos": 5,
-      "share": 20.0,
+      "share": 19.23,
       "detail": "5 repos",
-      "bytes": 307217
+      "bytes": 316257
     },
     {
       "name": "TypeScript",
       "repos": 5,
-      "share": 20.0,
+      "share": 19.23,
       "detail": "5 repos",
       "bytes": 1965112
     },
     {
       "name": "HTML",
-      "repos": 3,
-      "share": 12.0,
-      "detail": "3 repos",
-      "bytes": 2945598
+      "repos": 4,
+      "share": 15.38,
+      "detail": "4 repos",
+      "bytes": 3049527
     },
     {
       "name": "Shell",
       "repos": 2,
-      "share": 8.0,
+      "share": 7.69,
       "detail": "2 repos",
       "bytes": 11362
     },
     {
       "name": "Astro",
       "repos": 1,
-      "share": 4.0,
+      "share": 3.85,
       "detail": "1 repo",
       "bytes": 82211
     },
     {
       "name": "PowerShell",
       "repos": 1,
-      "share": 4.0,
+      "share": 3.85,
       "detail": "1 repo",
       "bytes": 19364
     },
     {
       "name": "PHP",
       "repos": 1,
-      "share": 4.0,
+      "share": 3.85,
       "detail": "1 repo",
       "bytes": 16888
     },
     {
       "name": "Java",
       "repos": 1,
-      "share": 4.0,
+      "share": 3.85,
       "detail": "1 repo",
       "bytes": 400773
     },
     {
       "name": "Docs / config",
-      "repos": 3,
-      "share": 10.71,
-      "detail": "3 repos",
+      "repos": 2,
+      "share": 7.14,
+      "detail": "2 repos",
       "bytes": 0
     }
   ],
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 2945598
+      "bytes": 3049527
     },
     {
       "name": "TypeScript",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Python",
-      "bytes": 672904
+      "bytes": 774463
     },
     {
       "name": "Java",
@@ -92,7 +92,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 307217
+      "bytes": 316257
     },
     {
       "name": "Roff",
@@ -100,7 +100,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 128315
+      "bytes": 148272
     },
     {
       "name": "Astro",
@@ -121,6 +121,10 @@
     {
       "name": "Batchfile",
       "bytes": 1605
+    },
+    {
+      "name": "Makefile",
+      "bytes": 1291
     }
   ]
 }
