@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-10-15T04:30:43+00:00",
+  "timezone": "Asia/Kolkata (IST)",
+  "sample": 201,
+  "hours": [
+    {
+      "hour": 0,
+      "events": 69
+    },
+    {
+      "hour": 1,
+      "events": 12
+    },
+    {
+      "hour": 2,
+      "events": 9
+    },
+    {
+      "hour": 3,
+      "events": 16
+    },
+    {
+      "hour": 4,
+      "events": 6
+    },
+    {
+      "hour": 5,
+      "events": 5
+    },
+    {
+      "hour": 6,
+      "events": 4
+    },
+    {
+      "hour": 7,
+      "events": 5
+    },
+    {
+      "hour": 8,
+      "events": 2
+    },
+    {
+      "hour": 9,
+      "events": 0
+    },
+    {
+      "hour": 10,
+      "events": 0
+    },
+    {
+      "hour": 11,
+      "events": 0
+    },
+    {
+      "hour": 12,
+      "events": 3
+    },
+    {
+      "hour": 13,
+      "events": 7
+    },
+    {
+      "hour": 14,
+      "events": 2
+    },
+    {
+      "hour": 15,
+      "events": 12
+    },
+    {
+      "hour": 16,
+      "events": 12
+    },
+    {
+      "hour": 17,
+      "events": 0
+    },
+    {
+      "hour": 18,
+      "events": 5
+    },
+    {
+      "hour": 19,
+      "events": 3
+    },
+    {
+      "hour": 20,
+      "events": 1
+    },
+    {
+      "hour": 21,
+      "events": 10
+    },
+    {
+      "hour": 22,
+      "events": 7
+    },
+    {
+      "hour": 23,
+      "events": 11
+    }
+  ]
+}

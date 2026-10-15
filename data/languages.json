@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-10-15T04:30:41+00:00",
+  "basis": "own non-fork repositories, counted by primary language",
+  "by_repo": [
+    {
+      "name": "Python",
+      "repos": 6,
+      "share": 24.0,
+      "detail": "6 repos",
+      "bytes": 672904
+    },
+    {
+      "name": "JavaScript",
+      "repos": 5,
+      "share": 20.0,
+      "detail": "5 repos",
+      "bytes": 307217
+    },
+    {
+      "name": "TypeScript",
+      "repos": 5,
+      "share": 20.0,
+      "detail": "5 repos",
+      "bytes": 1965112
+    },
+    {
+      "name": "HTML",
+      "repos": 3,
+      "share": 12.0,
+      "detail": "3 repos",
+      "bytes": 2945598
+    },
+    {
+      "name": "Shell",
+      "repos": 2,
+      "share": 8.0,
+      "detail": "2 repos",
+      "bytes": 11362
+    },
+    {
+      "name": "Astro",
+      "repos": 1,
+      "share": 4.0,
+      "detail": "1 repo",
+      "bytes": 82211
+    },
+    {
+      "name": "PowerShell",
+      "repos": 1,
+      "share": 4.0,
+      "detail": "1 repo",
+      "bytes": 19364
+    },
+    {
+      "name": "PHP",
+      "repos": 1,
+      "share": 4.0,
+      "detail": "1 repo",
+      "bytes": 16888
+    },
+    {
+      "name": "Java",
+      "repos": 1,
+      "share": 4.0,
+      "detail": "1 repo",
+      "bytes": 400773
+    },
+    {
+      "name": "Docs / config",
+      "repos": 3,
+      "share": 10.71,
+      "detail": "3 repos",
+      "bytes": 0
+    }
+  ],
+  "by_bytes": [
+    {
+      "name": "HTML",
+      "bytes": 2945598
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 1965112
+    },
+    {
+      "name": "Python",
+      "bytes": 672904
+    },
+    {
+      "name": "Java",
+      "bytes": 400773
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 307217
+    },
+    {
+      "name": "Roff",
+      "bytes": 305008
+    },
+    {
+      "name": "CSS",
+      "bytes": 128315
+    },
+    {
+      "name": "Astro",
+      "bytes": 82211
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 19364
+    },
+    {
+      "name": "PHP",
+      "bytes": 16888
+    },
+    {
+      "name": "Shell",
+      "bytes": 11362
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 1605
+    }
+  ]
+}
