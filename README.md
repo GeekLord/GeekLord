@@ -16,7 +16,8 @@
 <a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/LinkedIn-in%2Fgeeklord-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Credly-Verified_badges-F2B33D?style=for-the-badge&logo=credly&logoColor=white" alt="Credly"></a>
 <a href="https://g.dev/Shobhit"><img src="https://img.shields.io/badge/Google_Dev-g.dev%2FShobhit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Developer"></a>
-<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EA4335?style=for-the-badge" alt="Email"></a>
+<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="tel:+917965852100"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-25D366?style=for-the-badge" alt="Phone, answered 24x7"></a>
 
 <br><br>
 
@@ -29,7 +30,7 @@
   <b>offline-first field-data instruments</b> deployed in 12+ countries, and
   <b>grounded AI workflows</b> that cite their sources instead of guessing.
   <br>
-  <sub>Lucknow, India · IST (UTC+5:30) · usually replying within one business day</sub>
+  <sub>Lucknow, India · IST (UTC+5:30) · phone answered 24×7 by my AI assistant · email replies within one business day</sub>
 </p>
 
 <a href="https://shobhit.net/portfolio/"><img src="https://img.shields.io/badge/Selected_work-27_production_deployments-8B6BFF?style=flat-square" alt="Portfolio"></a>
@@ -113,6 +114,109 @@
 </ul>
 
 <p><code>RAG</code> <code>Agents</code> <code>Guardrails</code> <code>Claude · GPT · Gemini</code></p>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- ═══════════════ VENTURES ═══════════════ -->
+
+<div align="center">
+<h2>Ventures I run</h2>
+</div>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<h3>🛠️ Cyber Mitra Solutions</h3>
+
+<p><sub><b>Founder &amp; Principal Architect</b> · since 2005</sub></p>
+
+<p>The engineering studio behind the deployments on this page: field-data systems, web platforms and AI for research organisations and businesses worldwide.</p>
+
+<p><a href="https://cybermitra.com/">cybermitra.com →</a></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>💬 AskBurg</h3>
+
+<p><sub><b>Founder &amp; CEO</b> · since 2024</sub></p>
+
+<p>AI assistants and custom RAG chatbots for small businesses and teams: one knowledge base, answers that cite their sources, any model with no lock-in.</p>
+
+<p><a href="https://askburg.com/">askburg.com →</a></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h3>💸 UPIfree</h3>
+
+<p><sub><b>Founder</b> · since 2026</sub></p>
+
+<p>A toolkit for the real cost of UPI payments: fee calculator, QR tools, an AI bill reader and the Ask Pikoo chat assistant.</p>
+
+<p><a href="https://www.upifree.com/">upifree.com →</a></p>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- ═══════════════ FEATURED OPEN SOURCE ═══════════════ -->
+
+<div align="center">
+<h2>Featured open source</h2>
+</div>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/sarvam-ai_api_tools">🎙️ sarvam-ai_api_tools</a></h4>
+<p><sub>Python CLI suite on Sarvam AI: speech-to-text with diarization, document intelligence, image analysis, SEO cataloguing.</sub></p>
+<p><code>Python</code> <code>Indic AI</code></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/Picslot">🖼️ Picslot</a></h4>
+<p><sub>AI photo editor: retouch, filter and adjust images with plain-text prompts.</sub></p>
+<p><code>TypeScript</code> <code>GenAI</code></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/wan2gp_stuff">🎬 wan2gp_stuff</a></h4>
+<p><sub>One-click Wan2GP video-generation install for RTX 50-series GPUs.</sub></p>
+<p><code>CUDA</code> <code>Video AI</code></p>
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/SurveyCTO_Image_Pair_Vote_fieldplugin">🗳️ SurveyCTO field plugins</a></h4>
+<p><sub>Image-pair voting and EVM-style ballot plugins for SurveyCTO Collect, plus an <a href="https://github.com/GeekLord/XLSForm-to-printable-codebook">XLSForm → printable codebook</a> tool.</sub></p>
+<p><code>JavaScript</code> <code>SurveyCTO</code></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/free-image-analyzer">🔍 free-image-analyzer</a></h4>
+<p><sub>Client-side image safety checks plus reverse search for matching and duplicate images.</sub></p>
+<p><code>TypeScript</code> <code>Privacy-first</code></p>
+
+</td>
+<td width="33%" valign="top">
+
+<h4><a href="https://github.com/GeekLord/Win98-Defrag-Simulator">💾 Win98-Defrag-Simulator</a></h4>
+<p><sub>The Windows 98 Disk Defragmenter, rebuilt in the browser. Pure nostalgia, no disks harmed.</sub></p>
+<p><code>JavaScript</code> <code>Just for fun</code></p>
 
 </td>
 </tr>
@@ -259,7 +363,7 @@ pointless Windows 98 defrag simulator.</p>
 
 <p><a href="tel:+917965852100">+91 79658 52100</a></p>
 
-<p><sub>Mon&ndash;Sat, IST</sub></p>
+<p><sub>24&times;7 &middot; answered by my AI assistant</sub></p>
 
 </td>
 <td align="center" width="25%">
