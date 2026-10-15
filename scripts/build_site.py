@@ -169,7 +169,7 @@ FACTS = [
 
 CONTACT = [
     ("mail", "Email", "shobhit@shobhit.net", "mailto:shobhit@shobhit.net"),
-    ("phone", "Phone", "+91 79658 52100", "tel:+917965852100"),
+    ("phone", "Phone · 24×7, AI-answered", "+91 79658 52100", "tel:+917965852100"),
     ("globe", "Website", "shobhit.net", "https://shobhit.net/"),
     ("building", "Studio", "cybermitra.com", "https://cybermitra.com/"),
     ("pen", "Blog", "geeklord.com", "https://geeklord.com/"),
@@ -340,7 +340,7 @@ def hero(stats: dict) -> str:
     <div class="hero-meta">
       <span class="pulse"><i></i> Open to select engagements</span>
       <span class="chip">Lucknow, India · IST (UTC+5:30)</span>
-      <span class="chip">Usually replying within one business day</span>
+      <span class="chip">Phone answered 24×7 by my AI assistant</span>
     </div>
     <div class="btn-row" style="justify-content:center;margin-top:22px">
       <a class="btn primary" href="#work">See selected work</a>
