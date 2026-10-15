@@ -1,0 +1,9 @@
+# Build tooling for the profile assets.
+#
+#   pip install -r requirements.txt
+#
+# scripts/fetch_stats.py, build_assets.py, build_site.py and check.py use only
+# the standard library; these two are needed to subset the typefaces and embed
+# them as base64 woff2 inside the generated SVGs.
+fonttools>=4.50
+brotli>=1.1
