@@ -15,6 +15,7 @@ import math
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import build_motion
 from design import (
     DARK,
     LIGHT,
@@ -152,9 +153,20 @@ def build_banner() -> str:
                 f'<circle cx="1062" cy="300" r="{radius}" fill="none" stroke="{t["violet"]}" '
                 f'stroke-opacity="{opacity}" stroke-width="1"/>'
             )
+        body.append(
+            f'<circle cx="1062" cy="300" r="4.5" fill="none" stroke="{t["cyan"]}" stroke-width="1.5">'
+            f'<animate attributeName="r" values="4.5;26" dur="3s" repeatCount="indefinite"/>'
+            f'<animate attributeName="stroke-opacity" values="0.8;0" dur="3s" repeatCount="indefinite"/>'
+            f'</circle>')
         body.append(f'<circle cx="1062" cy="300" r="4.5" fill="{t["cyan"]}"/>')
-        body.append(f'<circle cx="988" cy="300" r="3" fill="{t["violet"]}" fill-opacity="0.9"/>')
-        body.append(f'<circle cx="1136" cy="300" r="3" fill="{t["violet"]}" fill-opacity="0.9"/>')
+        # Satellites ride the three orbit rings at different speeds.
+        for radius, period, start, colour in ((74, 14, 180, t["violet"]), (112, 22, 0, t["violet"]),
+                                              (150, 34, 120, t["cyan"])):
+            body.append(
+                f'<g><animateTransform attributeName="transform" type="rotate" '
+                f'from="{start} 1062 300" to="{start + 360} 1062 300" dur="{period}s" '
+                f'repeatCount="indefinite"/>'
+                f'<circle cx="{1062 + radius}" cy="300" r="3.2" fill="{colour}" fill-opacity="0.95"/></g>')
 
         # Eyebrow
         body.append(rect(76, 74, 4, 15, rx=2, fill=t["violet"]))
@@ -168,7 +180,9 @@ def build_banner() -> str:
         pill_x = width - 66 - pill_w
         body.append(rect(pill_x, 70, pill_w, 30, rx=15, fill=t["chip_bg"], stroke=t["green"],
                          stroke_opacity=0.55))
-        body.append(f'<circle cx="{pill_x + 17}" cy="85" r="4.5" fill="{t["green"]}"/>')
+        body.append(f'<circle cx="{pill_x + 17}" cy="85" r="4.5" fill="{t["green"]}">'
+                    f'<animate attributeName="fill-opacity" values="1;0.35;1" dur="2s" '
+                    f'repeatCount="indefinite"/></circle>')
         body.append(text(pill_x + 30, 89.5, label, book=book, family="mono", size=12,
                          fill=t["ink_soft"], tracking=0.12))
 
@@ -219,11 +233,19 @@ def build_divider() -> str:
         f'<stop offset="0.5" stop-color="{theme["cyan"]}" stop-opacity="0.75"/>'
         f'<stop offset="0.82" stop-color="{theme["violet"]}" stop-opacity="0.55"/>'
         f'<stop offset="1" stop-color="{theme["violet"]}" stop-opacity="0"/></linearGradient>'
+        f'<linearGradient id="spark" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>'
+        f'<stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.9"/>'
+        f'<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>'
     )
     body = [
         rect(0, 18, CANVAS, 2.5, rx=1.25, fill="url(#fade)"),
+        f'<rect x="-160" y="17.5" width="160" height="3.5" rx="1.75" fill="url(#spark)">'
+        f'<animate attributeName="x" values="-160;{CANVAS}" dur="4.5s" repeatCount="indefinite"/>'
+        f'</rect>',
         f'<path d="M{CANVAS / 2 - 7} 19.2 l7 -6 l7 6 l-7 6 z" fill="{theme["cyan"]}" '
-        f'fill-opacity="0.9"/>',
+        f'fill-opacity="0.9"><animate attributeName="fill-opacity" values="0.9;0.35;0.9" '
+        f'dur="2.4s" repeatCount="indefinite"/></path>',
     ]
     markup = wrap_svg(CANVAS, 40, "".join(body), FontBook(), theme, defs, title="divider")
     write(ASSETS / "divider.svg", markup)
@@ -252,6 +274,12 @@ def build_stats(stats: dict) -> str:
         t = theme
         defs = accent_gradient(t, "accent")
         body = [
+            "<style>.tile{opacity:0;animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}"
+            "@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}"
+            ".bar{transform-box:fill-box;transform-origin:0 50%;animation:grow 1.2s ease-out forwards}"
+            "@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}"
+            "@media (prefers-reduced-motion:reduce){.tile{animation:none;opacity:1}.bar{animation:none}}"
+            "</style>",
             panel(0, 0, width, height, t, radius=22, fill=t["panel"], stroke=t["line"]),
             rect(28, 26, 3, 13, rx=1.5, fill=t["cyan"]),
             text(40, 37, "LIVE FROM GITHUB", book=book, family="mono", size=11.5,
@@ -268,12 +296,14 @@ def build_stats(stats: dict) -> str:
             if index:
                 body.append(line(cx, 66, cx, height - 30, stroke=t["line"], width=1, opacity=0.9))
             pad = 22
-            body.append(rect(cx + pad, 78, 26, 3, rx=1.5, fill="url(#accent)"))
+            body.append(f'<g class="tile" style="animation-delay:{0.15 + index * 0.12:.2f}s">')
+            body.append(rect(cx + pad, 78, 26, 3, rx=1.5, fill="url(#accent)", class_="bar"))
             body.append(text(cx + pad, 126, value, book=book, weight=600, size=35,
                              fill=t["ink"], tracking=-0.02))
             body.append(text(cx + pad, 155, label, book=book, family="mono", size=11,
                              fill=t["ink_soft"], tracking=0.12))
             body.append(text(cx + pad, 172, note, book=book, size=12, fill=t["faint"]))
+            body.append("</g>")
         outputs[t["name"]] = wrap_svg(width, height, "".join(body), book, t, defs,
                                       title="GitHub activity — updated daily")
     for name, markup in outputs.items():
@@ -834,6 +864,7 @@ def main() -> None:
         build_blueprint(),
         build_crawl(calendar, inline=True),
     ]
+    built += build_motion.build_all()
     print("built:", ", ".join(built))
     for path in sorted(CARDS.glob("*.svg")) + sorted(ASSETS.glob("*.svg")):
         print(f"  {path.relative_to(ROOT)}  {path.stat().st_size / 1024:.1f} KB")
