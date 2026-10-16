@@ -41,6 +41,17 @@
 
 <br>
 
+<!-- ═══════════════ TERMINAL INTRO ═══════════════ -->
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/terminal-dark.svg">
+  <img src="assets/cards/terminal-light.svg" alt="A terminal that types out who I am, my ventures and how to reach me" width="100%">
+</picture>
+</div>
+
+<br>
+
 <!-- ═══════════════ LIVE PORTRAIT OF THE WORK ═══════════════ -->
 
 <div align="center">
@@ -58,6 +69,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/languages-dark.svg">
   <img src="assets/cards/languages-light.svg" alt="Primary language mix across own repositories" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/rhythm-dark.svg">
+  <img src="assets/cards/rhythm-light.svg" alt="Commit rhythm by hour of day in IST, bars rising one by one" width="100%">
 </picture>
 
 <br><br>
@@ -118,6 +134,15 @@
 </td>
 </tr>
 </table>
+
+<br>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/orbit-dark.svg">
+  <img src="assets/cards/orbit-light.svg" alt="My working stack: languages, platforms and AI models in rotating orbits" width="100%">
+</picture>
+</div>
 
 <br>
 
@@ -406,4 +431,10 @@ GitHub data by a scheduled workflow, then committed back as plain SVG.
 <a href="README-SETUP.md">How it works →</a>
 </sub>
 
+<br><br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/footer-dark.svg">
+  <img src="assets/cards/footer-light.svg" alt="Thanks for stopping by" width="100%">
+</picture>
 </div>
