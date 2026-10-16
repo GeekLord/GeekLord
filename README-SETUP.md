@@ -20,6 +20,7 @@ site/            the interactive micro-site (optional, see below)
 | `scripts/design.py` | Design tokens (colour, type, spacing) plus the tiny SVG drawing kit: text with real font metrics, pills, panels, dot grids. |
 | `scripts/fetch_stats.py` | Reads GraphQL/REST and writes `data/*.json`. Standard library only. |
 | `scripts/build_assets.py` | Draws every card in `assets/`: banner, stats, languages, toolkit, timeline, blueprint and the animated contribution crawl. |
+| `scripts/build_motion.py` | The animated cards: a self-typing terminal, the stack in orbit, commit rhythm by IST hour, and the footer wave. Pure SMIL + CSS keyframes, so they play inside GitHub's `<img>` sandbox. |
 | `scripts/build_site.py` | Renders `site/index.html` and subsets the web fonts to the glyphs the page actually uses. |
 | `scripts/check.py` | Guardrails — fails the build if any asset becomes broken, non-self-contained or references a missing file. |
 | `scripts/fonts/` | Space Grotesk and JetBrains Mono (SIL OFL), committed so builds are reproducible and offline. |
