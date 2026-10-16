@@ -17,7 +17,7 @@
 <a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Credly-Verified_badges-F2B33D?style=for-the-badge&logo=credly&logoColor=white" alt="Credly"></a>
 <a href="https://g.dev/Shobhit"><img src="https://img.shields.io/badge/Google_Dev-g.dev%2FShobhit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Developer"></a>
 <a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="tel:+917965852100"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-25D366?style=for-the-badge" alt="Phone, answered 24x7"></a>
+<a href="https://geeklord.github.io/call/"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-25D366?style=for-the-badge" alt="Phone, answered 24x7"></a>
 
 <br><br>
 
@@ -386,7 +386,7 @@ pointless Windows 98 defrag simulator.</p>
 
 <h4>📞 Phone</h4>
 
-<p><a href="tel:+917965852100">+91 79658 52100</a></p>
+<p><a href="https://geeklord.github.io/call/">+91 79658 52100</a></p>
 
 <p><sub>24&times;7 &middot; answered by my AI assistant</sub></p>
 
