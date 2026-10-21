@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-20T08:38:22+00:00",
+  "generated_at": "2026-10-21T08:39:18+00:00",
   "timezone": "Asia/Kolkata (IST)",
-  "sample": 295,
+  "sample": 300,
   "hours": [
     {
       "hour": 0,
-      "events": 69
+      "events": 68
     },
     {
       "hour": 1,
-      "events": 48
+      "events": 46
     },
     {
       "hour": 2,
-      "events": 20
+      "events": 23
     },
     {
       "hour": 3,
-      "events": 48
+      "events": 61
     },
     {
       "hour": 4,
@@ -29,7 +29,7 @@
     },
     {
       "hour": 6,
-      "events": 3
+      "events": 2
     },
     {
       "hour": 7,
@@ -89,15 +89,15 @@
     },
     {
       "hour": 21,
-      "events": 4
+      "events": 3
     },
     {
       "hour": 22,
-      "events": 7
+      "events": 2
     },
     {
       "hour": 23,
-      "events": 11
+      "events": 10
     }
   ]
 }
