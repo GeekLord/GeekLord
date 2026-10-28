@@ -14,7 +14,6 @@
 <a href="https://geeklord.com/"><img src="https://img.shields.io/badge/-geeklord.com-EDE6DC?style=for-the-badge&logo=rss&logoColor=F4F2EE&labelColor=722F37" alt="Blog: geeklord.com"></a>
 <a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/-in%2Fgeeklord-EDE6DC?style=for-the-badge&logo=linkedin&logoColor=F4F2EE&labelColor=722F37" alt="LinkedIn: in/geeklord"></a>
 <a href="https://x.com/Shobhit"><img src="https://img.shields.io/badge/-@Shobhit-EDE6DC?style=for-the-badge&logo=x&logoColor=F4F2EE&labelColor=722F37" alt="X: @Shobhit"></a>
-<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/-shobhit@shobhit.net-EDE6DC?style=for-the-badge&logo=gmail&logoColor=F4F2EE&labelColor=722F37" alt="Email: shobhit@shobhit.net"></a>
 
 <br><br>
 
