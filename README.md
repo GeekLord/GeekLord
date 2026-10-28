@@ -9,15 +9,12 @@
 <br>
 
 <!-- ═══════════════ LINKS ═══════════════ -->
-<a href="https://shobhit.net/"><img src="https://img.shields.io/badge/Website-shobhit.net-EDE6DC?style=for-the-badge&logo=googlechrome&labelColor=722F37&logoColor=F4F2EE" alt="Website"></a>
-<a href="https://cybermitra.com/"><img src="https://img.shields.io/badge/Studio-Cyber_Mitra_Solutions-EDE6DC?style=for-the-badge&logo=icloud&labelColor=722F37&logoColor=F4F2EE" alt="Cyber Mitra Solutions"></a>
-<a href="https://geeklord.com/"><img src="https://img.shields.io/badge/Blog-geeklord.com-EDE6DC?style=for-the-badge&logo=rss&labelColor=722F37&logoColor=F4F2EE" alt="Blog"></a>
-<a href="https://x.com/Shobhit"><img src="https://img.shields.io/badge/X-@Shobhit-EDE6DC?style=for-the-badge&logo=x&labelColor=722F37&logoColor=F4F2EE" alt="X"></a>
-<a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/LinkedIn-in%2Fgeeklord-EDE6DC?style=for-the-badge&logo=linkedin&labelColor=722F37&logoColor=F4F2EE" alt="LinkedIn"></a>
-<a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Credly-Verified_badges-EDE6DC?style=for-the-badge&logo=credly&labelColor=722F37&logoColor=F4F2EE" alt="Credly"></a>
-<a href="https://g.dev/Shobhit"><img src="https://img.shields.io/badge/Google_Dev-g.dev%2FShobhit-EDE6DC?style=for-the-badge&logo=google&labelColor=722F37&logoColor=F4F2EE" alt="Google Developer"></a>
-<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EDE6DC?style=for-the-badge&logo=gmail&labelColor=722F37&logoColor=F4F2EE" alt="Email"></a>
-<a href="https://geeklord.github.io/call/"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-EDE6DC?style=for-the-badge&labelColor=722F37&logoColor=F4F2EE" alt="Phone, answered 24x7"></a>
+<a href="https://shobhit.net/"><img src="https://img.shields.io/badge/-shobhit.net-EDE6DC?style=for-the-badge&logo=googlechrome&logoColor=F4F2EE&labelColor=722F37" alt="Website: shobhit.net"></a>
+<a href="https://cybermitra.com/"><img src="https://img.shields.io/badge/-Cyber_Mitra_Solutions-EDE6DC?style=for-the-badge&logo=icloud&logoColor=F4F2EE&labelColor=722F37" alt="Studio: Cyber Mitra Solutions"></a>
+<a href="https://geeklord.com/"><img src="https://img.shields.io/badge/-geeklord.com-EDE6DC?style=for-the-badge&logo=rss&logoColor=F4F2EE&labelColor=722F37" alt="Blog: geeklord.com"></a>
+<a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/-in%2Fgeeklord-EDE6DC?style=for-the-badge&logo=linkedin&logoColor=F4F2EE&labelColor=722F37" alt="LinkedIn: in/geeklord"></a>
+<a href="https://x.com/Shobhit"><img src="https://img.shields.io/badge/-@Shobhit-EDE6DC?style=for-the-badge&logo=x&logoColor=F4F2EE&labelColor=722F37" alt="X: @Shobhit"></a>
+<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/-shobhit@shobhit.net-EDE6DC?style=for-the-badge&logo=gmail&logoColor=F4F2EE&labelColor=722F37" alt="Email: shobhit@shobhit.net"></a>
 
 <br><br>
 
@@ -29,52 +26,11 @@
   Twenty-plus years of engineering dependable systems: <b>sub-second web platforms</b>,
   <b>offline-first field-data instruments</b> deployed in 12+ countries, and
   <b>grounded AI workflows</b> that cite their sources instead of guessing.
-  <br>
-  <sub>Lucknow, India · IST (UTC+5:30) · phone answered 24×7 by my AI assistant · email replies within one business day</sub>
 </p>
 
-<a href="https://shobhit.net/portfolio/"><img src="https://img.shields.io/badge/Selected_work-27_production_deployments-EDE6DC?style=flat-square&labelColor=722F37" alt="Portfolio"></a>
+<a href="https://shobhit.net/portfolio/"><img src="https://img.shields.io/badge/Selected_work-27_case_studies-EDE6DC?style=flat-square&labelColor=722F37" alt="Portfolio: 27 case studies"></a>
 <a href="https://shobhit.net/services/"><img src="https://img.shields.io/badge/Services-SurveyCTO_·_Web_·_AI-EDE6DC?style=flat-square&labelColor=722F37" alt="Services"></a>
-<a href="https://shobhit.net/contact/"><img src="https://img.shields.io/badge/Start_a_project-→-EDE6DC?style=flat-square&labelColor=722F37" alt="Contact"></a>
-
-</div>
-
-<br>
-
-<!-- ═══════════════ TERMINAL INTRO ═══════════════ -->
-
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/terminal-dark.svg">
-  <img src="assets/cards/terminal-light.svg" alt="A terminal that types out who I am, my ventures and how to reach me" width="100%">
-</picture>
-</div>
-
-<br>
-
-<!-- ═══════════════ LIVE PORTRAIT OF THE WORK ═══════════════ -->
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/crawl-dark.svg">
-  <img src="assets/crawl-light.svg" alt="Animated contribution calendar: a crawler eats one square per contribution" width="100%">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-dark.svg">
-  <img src="assets/cards/stats-light.svg" alt="Live GitHub statistics" width="100%">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/languages-dark.svg">
-  <img src="assets/cards/languages-light.svg" alt="Primary language mix across own repositories" width="100%">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/rhythm-dark.svg">
-  <img src="assets/cards/rhythm-light.svg" alt="Commit rhythm by hour of day in IST, bars rising one by one" width="100%">
-</picture>
+<a href="https://shobhit.net/contact/"><img src="https://img.shields.io/badge/Start_a_project-→-EDE6DC?style=flat-square&labelColor=722F37" alt="Start a project"></a>
 
 <br><br>
 
@@ -146,6 +102,81 @@
 
 <br>
 
+<!-- ═══════════════ SELECTED WORK ═══════════════ -->
+
+<div align="center">
+<h2>Selected work</h2>
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3><img src="assets/icons/cap.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Souters Training Portal &amp; Executive LMS</h3>
+
+<p><sub><b>London, UK</b> · 2010 &middot; current platform 2021</sub></p>
+
+<p>Premier accredited executive training platform with custom booking and automated
+enrolment. Continuous <b>99.9% uptime since 2021</b>, sub-second pages under real traffic.</p>
+
+<p><code>WordPress</code> <code>PHP</code> <code>Stripe</code> · <a href="https://shobhit.net/portfolio/souters-training/">case study →</a></p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><img src="assets/icons/globe.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Global Field Research Data Suite</h3>
+
+<p><sub><b>International research consortia</b> · 12+ countries</sub></p>
+
+<p>Enterprise SurveyCTO/ODK architecture behind 600+ complex instruments.
+<b>1.5M+ high-integrity submissions</b> across health, agriculture and socio-economic research.</p>
+
+<p><code>SurveyCTO</code> <code>ODK</code> <code>Python</code> <code>PostgreSQL</code> · <a href="https://shobhit.net/portfolio/field-research-data-suite/">case study →</a></p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><img src="assets/icons/chart.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Morsel Research Web &amp; Cloud Data Hub</h3>
+
+<p><sub><b>New Delhi &amp; Lucknow</b> · 2013 &ndash; present</sub></p>
+
+<p>Corporate portal, secure research repository and field-operations infrastructure
+for roughly <b>400 studies covering ~20M surveyed respondents</b>.</p>
+
+<p><code>WordPress</code> <code>PHP</code> <code>AWS EC2/S3</code> · <a href="https://shobhit.net/portfolio/morsel-india-platform/">case study →</a></p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><img src="assets/icons/users.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Project PRAYAS: Safe Youth Migration Baseline</h3>
+
+<p><sub><b>Ministry of External Affairs &amp; UN IOM</b> · 10+ states · 2022 &ndash; 2023</sub></p>
+
+<p>Nationwide baseline on safe, orderly and regular migration, run on multilingual CAPI
+instruments. <b>10,000 migrant youths surveyed</b> across more than ten Indian states.</p>
+
+<p><code>SurveyCTO</code> <code>CAPI</code> <code>Multilingual</code> · <a href="https://shobhit.net/portfolio/">portfolio →</a></p>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<sub><b>Research partners include</b> University College London · University of Chicago / EPIC India · Macquarie University · University of Notre Dame &amp; UC Santa Cruz · CEEW, Johns Hopkins SAIS &amp; Yale-NUS · MEA &amp; UN IOM</sub>
+
+<br><br>
+
+</div>
+
+> “Shobhit designed and maintained our mission-critical training booking platform with extraordinary attention to performance, security, and uptime. Over 15 years, his technical stewardship has been exemplary and dependable.”
+>
+> — <b>Peter Souters</b>, Director, Souters Training (London)
+
+<br>
+
 <!-- ═══════════════ VENTURES ═══════════════ -->
 
 <div align="center">
@@ -195,7 +226,7 @@
 <!-- ═══════════════ FEATURED OPEN SOURCE ═══════════════ -->
 
 <div align="center">
-<h2>Featured open source</h2>
+<h2>Open source</h2>
 </div>
 
 <table>
@@ -247,6 +278,8 @@
 </tr>
 </table>
 
+<p align="center"><sub><a href="https://github.com/GeekLord?tab=repositories">All repositories →</a></sub></p>
+
 <br>
 
 <!-- ═══════════════ HOW SYSTEMS GET BUILT ═══════════════ -->
@@ -259,77 +292,43 @@
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/timeline-dark.svg">
-  <img src="assets/cards/timeline-light.svg" alt="Two decades of milestones" width="100%">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/toolkit-dark.svg">
-  <img src="assets/cards/toolkit-light.svg" alt="Toolkit and stack" width="100%">
+  <img src="assets/cards/timeline-light.svg" alt="Two decades of milestones, 2005 to 2026" width="100%">
 </picture>
 </div>
+
+<details>
+<summary><b>The full toolkit</b> · languages, platforms, field data, AI and cloud</summary>
+<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/toolkit-dark.svg">
+  <img src="assets/cards/toolkit-light.svg" alt="Toolkit and stack by category" width="100%">
+</picture>
+</details>
 
 <br>
 
-<!-- ═══════════════ SELECTED WORK ═══════════════ -->
+<!-- ═══════════════ LIVE FROM GITHUB ═══════════════ -->
 
 <div align="center">
-<h2>Selected deployment history</h2>
+<h2>On GitHub, live</h2>
+<p><sub>Refreshed daily from the GitHub API.</sub></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/crawl-dark.svg">
+  <img src="assets/crawl-light.svg" alt="Animated contribution calendar: a crawler eats one square per contribution" width="100%">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats-dark.svg">
+  <img src="assets/cards/stats-light.svg" alt="Live GitHub statistics" width="100%">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/languages-dark.svg">
+  <img src="assets/cards/languages-light.svg" alt="Primary language mix across own repositories" width="100%">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/rhythm-dark.svg">
+  <img src="assets/cards/rhythm-light.svg" alt="Commit rhythm by hour of day in IST" width="100%">
+</picture>
 </div>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<h3><img src="assets/icons/cap.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Souters Training Portal &amp; Executive LMS</h3>
-
-<p><sub><b>London, UK</b> · 2010 &middot; current platform 2021</sub></p>
-
-<p>Premier accredited executive training platform with custom booking and automated
-enrolment. Continuous <b>99.9% uptime since 2021</b>, sub-second pages under real traffic.</p>
-
-<p><code>WordPress</code> <code>PHP</code> <code>Stripe</code> · <a href="https://shobhit.net/portfolio/souters-training/">case study →</a></p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3><img src="assets/icons/globe.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Global Field Research Data Suite</h3>
-
-<p><sub><b>International research consortia</b> · 12+ countries</sub></p>
-
-<p>Enterprise SurveyCTO/ODK architecture behind 600+ complex instruments.
-<b>1.5M+ high-integrity submissions</b> across health, agriculture and socio-economic research.</p>
-
-<p><code>SurveyCTO</code> <code>ODK</code> <code>Python</code> <code>PostgreSQL</code> · <a href="https://shobhit.net/portfolio/field-research-data-suite/">case study →</a></p>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3><img src="assets/icons/chart.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Morsel Research Web &amp; Cloud Data Hub</h3>
-
-<p><sub><b>New Delhi &amp; Lucknow</b> · 2013 &ndash; present</sub></p>
-
-<p>Corporate portal, secure research repository and field-operations infrastructure
-for roughly <b>400 studies covering ~20M surveyed respondents</b>.</p>
-
-<p><code>WordPress</code> <code>PHP</code> <code>AWS EC2/S3</code> · <a href="https://shobhit.net/portfolio/morsel-india-platform/">case study →</a></p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3><img src="assets/icons/toolbox.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Field tooling &amp; agent experiments</h3>
-
-<p><sub><b>Open source</b> · <a href="https://github.com/GeekLord?tab=repositories">28 own repositories</a></sub></p>
-
-<p>SurveyCTO field plugins, XLSForm utilities, WordPress plugins, a Sarvam AI CLI suite,
-hardening scripts for Windows and Cloudflare, an AI photo editor — and one lovingly
-pointless Windows 98 defrag simulator.</p>
-
-<p><code>Python</code> <code>TypeScript</code> <code>PowerShell</code> · <a href="https://github.com/GeekLord?tab=repositories">browse →</a></p>
-
-</td>
-</tr>
-</table>
 
 <br>
 
@@ -343,6 +342,7 @@ pointless Windows 98 defrag simulator.</p>
 <a href="https://www.credly.com/badges/c93f7b4e-c037-4d14-a78c-843be69fbfd0/public_url"><img src="https://img.shields.io/badge/Google_Cloud-Prompt_Design_in_Vertex_AI-722F37?style=for-the-badge&logo=googlecloud&labelColor=3A1218&logoColor=F4F2EE" alt="Google Cloud Vertex AI"></a>
 <a href="https://www.credly.com/badges/83820826-787a-4a60-9064-9cd3cd2cb492/public_url"><img src="https://img.shields.io/badge/Harvey-Level_1_Legal_Engineer-722F37?style=for-the-badge&labelColor=3A1218&logoColor=F4F2EE" alt="Harvey Legal Engineer"></a>
 <a href="https://shobhit.net/about/#claude-academy"><img src="https://img.shields.io/badge/Anthropic-15_Claude_Academy_badges-722F37?style=for-the-badge&logo=anthropic&labelColor=3A1218&logoColor=F4F2EE" alt="Claude Academy"></a>
+<a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Harvey-Level_1_Foundations-722F37?style=for-the-badge&labelColor=3A1218&logoColor=F4F2EE" alt="Harvey Level 1 Foundations"></a>
 
 <br><br>
 
@@ -351,6 +351,10 @@ pointless Windows 98 defrag simulator.</p>
 <b>GATE (IT) qualified 3×</b> — IIT Bombay, Kharagpur &amp; Kanpur &nbsp;·&nbsp;
 <b>Six Sigma White Belt</b> — CSSC
 </sub>
+
+<br><br>
+
+<sub><a href="https://www.credly.com/users/geeklord/badges">All badges on Credly →</a> &nbsp;·&nbsp; <a href="https://g.dev/Shobhit">Google Developer profile →</a></sub>
 
 </div>
 
@@ -370,6 +374,11 @@ pointless Windows 98 defrag simulator.</p>
   I take on a small number of engagements at a time, personally — architecture, build or rescue.<br>
   Bring the messy version of the problem; that is usually the interesting part.
 </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/terminal-dark.svg">
+  <img src="assets/cards/terminal-light.svg" alt="A terminal that types out who I am, my ventures and how to reach me" width="100%">
+</picture>
 
 </div>
 
@@ -414,21 +423,20 @@ pointless Windows 98 defrag simulator.</p>
 
 <br>
 
-> *"We don't build toys; we engineer systems that operate reliably in production."*
+<b>We don't build toys; we engineer systems that operate reliably in production.</b>
 
-<br>
+<br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=D46B7A&label=PROFILE+VIEWS">
-  <img src="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=722F37&label=PROFILE+VIEWS" alt="Profile views">
+  <source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=GeekLord&style=flat-square&color=D46B7A&label=PROFILE+VIEWS">
+  <img src="https://komarev.com/ghpvc/?username=GeekLord&style=flat-square&color=722F37&label=PROFILE+VIEWS" alt="Profile views">
 </picture>
 
 <br><br>
 
 <sub>
-This README is generated, not written by hand — the graphics above are built from live
-GitHub data by a scheduled workflow, then committed back as plain SVG.
-<a href="README-SETUP.md">How it works →</a>
+The graphics on this page are generated from live GitHub data by a scheduled workflow
+and committed back as plain SVG. <a href="README-SETUP.md">How it works →</a>
 </sub>
 
 <br><br>

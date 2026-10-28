@@ -859,7 +859,7 @@ def build_crawl(calendar: dict, *, inline: bool = False, static: bool = False) -
 ICON_STROKE = "#B5505F"
 README_ICONS = ("clipboard", "bolt", "robot", "building", "chat", "wallet", "mic", "image",
                 "film", "ballot", "search", "disk", "cap", "globe", "chart", "toolbox",
-                "mail", "phone", "pen", "pin")
+                "mail", "phone", "pen", "pin", "users")
 
 
 def build_icons() -> str:
