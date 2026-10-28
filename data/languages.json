@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T09:05:18+00:00",
+  "generated_at": "2026-10-28T03:56:48+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
@@ -7,7 +7,7 @@
       "repos": 7,
       "share": 26.92,
       "detail": "7 repos",
-      "bytes": 796325
+      "bytes": 800060
     },
     {
       "name": "JavaScript",
@@ -28,7 +28,7 @@
       "repos": 3,
       "share": 11.54,
       "detail": "3 repos",
-      "bytes": 3051301
+      "bytes": 3051205
     },
     {
       "name": "Shell",
@@ -76,7 +76,7 @@
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 3051301
+      "bytes": 3051205
     },
     {
       "name": "TypeScript",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Python",
-      "bytes": 796325
+      "bytes": 800060
     },
     {
       "name": "Java",
@@ -100,7 +100,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 148272
+      "bytes": 148506
     },
     {
       "name": "Astro",
