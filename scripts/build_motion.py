@@ -101,14 +101,14 @@ def build_terminal() -> str:
             rect(0, 30, width, 22, fill=t["panel_alt"]),
             line(0, 52, width, 52, stroke=t["line"], width=1),
         ]
-        for i, colour in enumerate(("#FF5F57", "#FEBC2E", "#28C840")):
+        for i, colour in enumerate((t["wine"], t["brass"], t["sage"])):
             body.append(f'<circle cx="{30 + i * 22}" cy="26" r="6.5" fill="{colour}"/>')
         body.append(text(width / 2, 31, "geeklord — zsh — 120×24", book=book, family="mono",
                          size=12, fill=t["muted"], anchor="middle", tracking=0.04))
         body.append(text(width - 28, 31, "LIVE", book=book, family="mono", size=11,
-                         fill=t["green"], anchor="end", tracking=0.16))
+                         fill=t["sage"], anchor="end", tracking=0.16))
         body.append(
-            f'<circle cx="{width - 70}" cy="27" r="4" fill="{t["green"]}">'
+            f'<circle cx="{width - 70}" cy="27" r="4" fill="{t["sage"]}">'
             f'<animate attributeName="opacity" values="1;0.25;1" dur="1.6s" '
             f'repeatCount="indefinite"/></circle>')
 
@@ -119,9 +119,9 @@ def build_terminal() -> str:
             if kind == "cmd":
                 tx = x0 + prompt_w
                 body.append(text(x0, y, "shobhit@geeklord", book=book, family="mono", size=size,
-                                 fill=t["green"]))
+                                 fill=t["sage"]))
                 body.append(text(x0 + text_width("shobhit@geeklord", "mono", 400, size), y,
-                                 ":~$", book=book, family="mono", size=size, fill=t["cyan"]))
+                                 ":~$", book=book, family="mono", size=size, fill=t["rose"]))
                 fill, weight = t["ink"], 600
             else:
                 tx = x0
@@ -152,9 +152,9 @@ def build_terminal() -> str:
                 f'<animate attributeName="width" dur="{total:.2f}s" repeatCount="indefinite" '
                 f'calcMode="{calc}" keyTimes="{";".join(ks)}" values="{";".join(vs)}"/>'
                 f'</rect></clipPath>')
-            colour = fill if kind == "cmd" else (t["ink_soft"] if index % 4 != 3 else t["amber"])
+            colour = fill if kind == "cmd" else (t["ink_soft"] if index % 4 != 3 else t["brass"])
             if index == 7:
-                colour = t["amber"]
+                colour = t["brass"]
             body.append(f'<g clip-path="url(#{clip_id})">'
                         + text(tx, y, content, book=book, family="mono", size=size,
                                weight=weight, fill=colour)
@@ -167,11 +167,11 @@ def build_terminal() -> str:
             f'<g opacity="0"><animate attributeName="opacity" dur="{total:.2f}s" '
             f'repeatCount="indefinite" calcMode="discrete" keyTimes="0;{appear}" values="0;1"/>'
             + text(x0, fy, "shobhit@geeklord", book=book, family="mono", size=size,
-                   fill=t["green"])
+                   fill=t["sage"])
             + text(x0 + text_width("shobhit@geeklord", "mono", 400, size), fy, ":~$",
-                   book=book, family="mono", size=size, fill=t["cyan"])
+                   book=book, family="mono", size=size, fill=t["rose"])
             + f'<rect x="{x0 + prompt_w:.1f}" y="{fy - size + 1}" width="{char_w:.1f}" '
-              f'height="{size + 3}" fill="{t["cyan"]}">'
+              f'height="{size + 3}" fill="{t["rose"]}">'
               f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" '
               f'dur="1s" repeatCount="indefinite"/></rect>'
             + "</g>")
@@ -203,16 +203,16 @@ def build_orbit() -> str:
     book = FontBook()
     outputs = {}
     for t in THEMES.values():
-        accents = [t["violet"], t["cyan"], t["green"]]
+        accents = [t["wine"], t["brass"], t["rose"]]
         defs = (
             accent_gradient(t, "accent")
             + f'<radialGradient id="core" cx="0.5" cy="0.5" r="0.5">'
-            f'<stop offset="0" stop-color="{t["violet"]}" stop-opacity="0.45"/>'
-            f'<stop offset="1" stop-color="{t["violet"]}" stop-opacity="0"/></radialGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}" stop-opacity="0.45"/>'
+            f'<stop offset="1" stop-color="{t["wine"]}" stop-opacity="0"/></radialGradient>'
         )
         body = [
             panel(0, 0, width, height, t, radius=22, fill=t["panel"], stroke=t["line"]),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["violet"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["wine"]),
             text(40, 37, "THE STACK IN ORBIT", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
         ]
@@ -222,9 +222,9 @@ def build_orbit() -> str:
         body.append(text(52, 170, "Platforms around them.", book=book, weight=600, size=30,
                          fill=t["ink"], tracking=-0.015))
         body.append(text(52, 208, "Models on the outside,", book=book, weight=600, size=30,
-                         gradient="accent", tracking=-0.015))
+                         fill=t["wine"], tracking=-0.015))
         body.append(text(52, 246, "swappable by design.", book=book, weight=600, size=30,
-                         gradient="accent", tracking=-0.015))
+                         fill=t["wine"], tracking=-0.015))
         notes = [
             ("inner", "languages I write every week", accents[0]),
             ("middle", "platforms I ship to production", accents[1]),
@@ -269,11 +269,11 @@ def build_orbit() -> str:
         body.append(f'<circle cx="{cx}" cy="{cy}" r="38" fill="{t["canvas"]}" '
                     f'stroke="url(#accent)" stroke-width="2.5"/>')
         body.append(
-            f'<circle cx="{cx}" cy="{cy}" r="38" fill="none" stroke="{t["cyan"]}" '
+            f'<circle cx="{cx}" cy="{cy}" r="38" fill="none" stroke="{t["rose"]}" '
             f'stroke-width="1.5"><animate attributeName="r" values="38;58" dur="2.8s" '
             f'repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.6;0" '
             f'dur="2.8s" repeatCount="indefinite"/></circle>')
-        body.append(text(cx, cy + 7, "SKP", book=book, weight=700, size=20, gradient="accent",
+        body.append(text(cx, cy + 7, "SKP", book=book, weight=700, size=20, fill=t["display"],
                          anchor="middle", tracking=0.04))
 
         outputs[t["name"]] = wrap_svg(width, height, "".join(body), book, t, defs,
@@ -309,8 +309,8 @@ def build_rhythm(activity: dict) -> str:
         defs = (
             accent_gradient(t, "accent")
             + f'<linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">'
-            f'<stop offset="0" stop-color="{t["violet"]}"/>'
-            f'<stop offset="1" stop-color="{t["cyan"]}"/></linearGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}"/>'
+            f'<stop offset="1" stop-color="{t["rose"]}"/></linearGradient>'
         )
         css = (
             "<style>"
@@ -326,7 +326,7 @@ def build_rhythm(activity: dict) -> str:
         body = [
             css,
             panel(0, 0, width, height, t, radius=22, fill=t["panel"], stroke=t["line"]),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["amber"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["brass"]),
             text(40, 37, "WHEN THE COMMITS LAND", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
             text(width - 28, 37, f"IST · last {activity.get('sample', 0)} public events",
@@ -339,7 +339,7 @@ def build_rhythm(activity: dict) -> str:
         # Night band
         for start, end in ((0, 5), (21, 24)):
             body.append(rect(gx + start * slot, gy - 4, (end - start) * slot, gh + 8, rx=8,
-                             fill=t["violet"], fill_opacity=0.07))
+                             fill=t["wine"], fill_opacity=0.07))
         body.append(line(gx, gy + gh, gx + gw, gy + gh, stroke=t["line"], width=1))
         for h, value in enumerate(counts):
             bh = max(3, gh * value / peak)
@@ -353,12 +353,12 @@ def build_rhythm(activity: dict) -> str:
                                  family="mono", size=11, fill=t["faint"], anchor="middle"))
         # Peak marker
         px = gx + peak_hour * slot + slot / 2
-        body.append(f'<circle cx="{px:.1f}" cy="{gy - 10}" r="4" fill="{t["amber"]}">'
+        body.append(f'<circle cx="{px:.1f}" cy="{gy - 10}" r="4" fill="{t["brass"]}">'
                     f'<animate attributeName="r" values="3;6;3" dur="1.8s" '
                     f'repeatCount="indefinite"/></circle>')
         # Scanning line, like a clock hand passing over the day
         body.append(f'<g class="sweep"><rect x="{gx}" y="{gy - 4}" width="2" height="{gh + 8}" '
-                    f'fill="{t["cyan"]}" fill-opacity="0.55"/></g>')
+                    f'fill="{t["rose"]}" fill-opacity="0.55"/></g>')
 
         outputs[t["name"]] = wrap_svg(width, height, "".join(body), book, t, defs,
                                       title="Commit rhythm by hour of day, IST")
@@ -390,11 +390,11 @@ def build_footer() -> str:
         defs = (
             accent_gradient(t, "accent", 0, 0, 1, 0)
             + f'<linearGradient id="wa" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="{t["violet"]}" stop-opacity="0.55"/>'
-            f'<stop offset="1" stop-color="{t["cyan"]}" stop-opacity="0.55"/></linearGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}" stop-opacity="0.55"/>'
+            f'<stop offset="1" stop-color="{t["rose"]}" stop-opacity="0.55"/></linearGradient>'
             + f'<linearGradient id="wb" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="{t["cyan"]}" stop-opacity="0.35"/>'
-            f'<stop offset="1" stop-color="{t["violet"]}" stop-opacity="0.35"/></linearGradient>'
+            f'<stop offset="0" stop-color="{t["rose"]}" stop-opacity="0.35"/>'
+            f'<stop offset="1" stop-color="{t["wine"]}" stop-opacity="0.35"/></linearGradient>'
         )
         body = []
         for fill, base, amp, dur in (("url(#wb)", 120, 16, 9), ("url(#wa)", 140, 12, 6)):
@@ -404,7 +404,7 @@ def build_footer() -> str:
                         f'dur="{dur}s" repeatCount="indefinite" values="{";".join(frames)}"/>'
                         f'</path>')
         body.append(text(width / 2, 62, "Thanks for stopping by.", book=book, weight=600,
-                         size=30, gradient="accent", anchor="middle", tracking=-0.015))
+                         size=30, fill=t["display"], anchor="middle", tracking=-0.015))
         body.append(text(width / 2, 92, "Bring the messy version of the problem.", book=book,
                          size=16, fill=t["muted"], anchor="middle"))
         outputs[t["name"]] = wrap_svg(width, height, "".join(body), book, t, defs,

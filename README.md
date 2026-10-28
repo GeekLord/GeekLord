@@ -9,15 +9,15 @@
 <br>
 
 <!-- ═══════════════ LINKS ═══════════════ -->
-<a href="https://shobhit.net/"><img src="https://img.shields.io/badge/Website-shobhit.net-8B6BFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
-<a href="https://cybermitra.com/"><img src="https://img.shields.io/badge/Studio-Cyber_Mitra_Solutions-35D6F2?style=for-the-badge&logo=icloud&logoColor=white" alt="Cyber Mitra Solutions"></a>
-<a href="https://geeklord.com/"><img src="https://img.shields.io/badge/Blog-geeklord.com-42D392?style=for-the-badge&logo=rss&logoColor=white" alt="Blog"></a>
-<a href="https://x.com/Shobhit"><img src="https://img.shields.io/badge/X-@Shobhit-111827?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
-<a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/LinkedIn-in%2Fgeeklord-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Credly-Verified_badges-F2B33D?style=for-the-badge&logo=credly&logoColor=white" alt="Credly"></a>
-<a href="https://g.dev/Shobhit"><img src="https://img.shields.io/badge/Google_Dev-g.dev%2FShobhit-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Developer"></a>
-<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://geeklord.github.io/call/"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-25D366?style=for-the-badge" alt="Phone, answered 24x7"></a>
+<a href="https://shobhit.net/"><img src="https://img.shields.io/badge/Website-shobhit.net-EDE6DC?style=for-the-badge&logo=googlechrome&labelColor=722F37&logoColor=F4F2EE" alt="Website"></a>
+<a href="https://cybermitra.com/"><img src="https://img.shields.io/badge/Studio-Cyber_Mitra_Solutions-EDE6DC?style=for-the-badge&logo=icloud&labelColor=722F37&logoColor=F4F2EE" alt="Cyber Mitra Solutions"></a>
+<a href="https://geeklord.com/"><img src="https://img.shields.io/badge/Blog-geeklord.com-EDE6DC?style=for-the-badge&logo=rss&labelColor=722F37&logoColor=F4F2EE" alt="Blog"></a>
+<a href="https://x.com/Shobhit"><img src="https://img.shields.io/badge/X-@Shobhit-EDE6DC?style=for-the-badge&logo=x&labelColor=722F37&logoColor=F4F2EE" alt="X"></a>
+<a href="https://www.linkedin.com/in/geeklord/"><img src="https://img.shields.io/badge/LinkedIn-in%2Fgeeklord-EDE6DC?style=for-the-badge&logo=linkedin&labelColor=722F37&logoColor=F4F2EE" alt="LinkedIn"></a>
+<a href="https://www.credly.com/users/geeklord/badges"><img src="https://img.shields.io/badge/Credly-Verified_badges-EDE6DC?style=for-the-badge&logo=credly&labelColor=722F37&logoColor=F4F2EE" alt="Credly"></a>
+<a href="https://g.dev/Shobhit"><img src="https://img.shields.io/badge/Google_Dev-g.dev%2FShobhit-EDE6DC?style=for-the-badge&logo=google&labelColor=722F37&logoColor=F4F2EE" alt="Google Developer"></a>
+<a href="mailto:shobhit@shobhit.net"><img src="https://img.shields.io/badge/Email-shobhit@shobhit.net-EDE6DC?style=for-the-badge&logo=gmail&labelColor=722F37&logoColor=F4F2EE" alt="Email"></a>
+<a href="https://geeklord.github.io/call/"><img src="https://img.shields.io/badge/Phone_24×7-%2B91_79658_52100-EDE6DC?style=for-the-badge&labelColor=722F37&logoColor=F4F2EE" alt="Phone, answered 24x7"></a>
 
 <br><br>
 
@@ -33,9 +33,9 @@
   <sub>Lucknow, India · IST (UTC+5:30) · phone answered 24×7 by my AI assistant · email replies within one business day</sub>
 </p>
 
-<a href="https://shobhit.net/portfolio/"><img src="https://img.shields.io/badge/Selected_work-27_production_deployments-8B6BFF?style=flat-square" alt="Portfolio"></a>
-<a href="https://shobhit.net/services/"><img src="https://img.shields.io/badge/Services-SurveyCTO_·_Web_·_AI-35D6F2?style=flat-square" alt="Services"></a>
-<a href="https://shobhit.net/contact/"><img src="https://img.shields.io/badge/Start_a_project-→-42D392?style=flat-square" alt="Contact"></a>
+<a href="https://shobhit.net/portfolio/"><img src="https://img.shields.io/badge/Selected_work-27_production_deployments-EDE6DC?style=flat-square&labelColor=722F37" alt="Portfolio"></a>
+<a href="https://shobhit.net/services/"><img src="https://img.shields.io/badge/Services-SurveyCTO_·_Web_·_AI-EDE6DC?style=flat-square&labelColor=722F37" alt="Services"></a>
+<a href="https://shobhit.net/contact/"><img src="https://img.shields.io/badge/Start_a_project-→-EDE6DC?style=flat-square&labelColor=722F37" alt="Contact"></a>
 
 </div>
 
@@ -86,7 +86,7 @@
 <tr>
 <td width="33%" valign="top">
 
-<h3>📋 Field data systems</h3>
+<h3><img src="assets/icons/clipboard.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Field data systems</h3>
 
 <p>Fault-tolerant mobile data collection for research that cannot afford bad numbers.</p>
 
@@ -102,7 +102,7 @@
 </td>
 <td width="33%" valign="top">
 
-<h3>⚡ Web platforms</h3>
+<h3><img src="assets/icons/bolt.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Web platforms</h3>
 
 <p>High-availability applications engineered for the tenth year, not the launch day.</p>
 
@@ -118,7 +118,7 @@
 </td>
 <td width="33%" valign="top">
 
-<h3>🤖 Practical AI</h3>
+<h3><img src="assets/icons/robot.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Practical AI</h3>
 
 <p>Agentic systems anchored to your documents, with the guardrails to prove it.</p>
 
@@ -156,7 +156,7 @@
 <tr>
 <td width="33%" valign="top">
 
-<h3>🛠️ Cyber Mitra Solutions</h3>
+<h3><img src="assets/icons/building.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Cyber Mitra Solutions</h3>
 
 <p><sub><b>Founder &amp; Principal Architect</b> · since 2005</sub></p>
 
@@ -167,7 +167,7 @@
 </td>
 <td width="33%" valign="top">
 
-<h3>💬 AskBurg</h3>
+<h3><img src="assets/icons/chat.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;AskBurg</h3>
 
 <p><sub><b>Founder &amp; CEO</b> · since 2024</sub></p>
 
@@ -178,7 +178,7 @@
 </td>
 <td width="33%" valign="top">
 
-<h3>💸 UPIfree</h3>
+<h3><img src="assets/icons/wallet.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;UPIfree</h3>
 
 <p><sub><b>Founder</b> · since 2026</sub></p>
 
@@ -202,21 +202,21 @@
 <tr>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/sarvam-ai_api_tools">🎙️ sarvam-ai_api_tools</a></h4>
+<h4><img src="assets/icons/mic.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/sarvam-ai_api_tools">sarvam-ai_api_tools</a></h4>
 <p><sub>Python CLI suite on Sarvam AI: speech-to-text with diarization, document intelligence, image analysis, SEO cataloguing.</sub></p>
 <p><code>Python</code> <code>Indic AI</code></p>
 
 </td>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/Picslot">🖼️ Picslot</a></h4>
+<h4><img src="assets/icons/image.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/Picslot">Picslot</a></h4>
 <p><sub>AI photo editor: retouch, filter and adjust images with plain-text prompts.</sub></p>
 <p><code>TypeScript</code> <code>GenAI</code></p>
 
 </td>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/wan2gp_stuff">🎬 wan2gp_stuff</a></h4>
+<h4><img src="assets/icons/film.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/wan2gp_stuff">wan2gp_stuff</a></h4>
 <p><sub>One-click Wan2GP video-generation install for RTX 50-series GPUs.</sub></p>
 <p><code>CUDA</code> <code>Video AI</code></p>
 
@@ -225,21 +225,21 @@
 <tr>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/SurveyCTO_Image_Pair_Vote_fieldplugin">🗳️ SurveyCTO field plugins</a></h4>
+<h4><img src="assets/icons/ballot.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/SurveyCTO_Image_Pair_Vote_fieldplugin">SurveyCTO field plugins</a></h4>
 <p><sub>Image-pair voting and EVM-style ballot plugins for SurveyCTO Collect, plus an <a href="https://github.com/GeekLord/XLSForm-to-printable-codebook">XLSForm → printable codebook</a> tool.</sub></p>
 <p><code>JavaScript</code> <code>SurveyCTO</code></p>
 
 </td>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/free-image-analyzer">🔍 free-image-analyzer</a></h4>
+<h4><img src="assets/icons/search.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/free-image-analyzer">free-image-analyzer</a></h4>
 <p><sub>Client-side image safety checks plus reverse search for matching and duplicate images.</sub></p>
 <p><code>TypeScript</code> <code>Privacy-first</code></p>
 
 </td>
 <td width="33%" valign="top">
 
-<h4><a href="https://github.com/GeekLord/Win98-Defrag-Simulator">💾 Win98-Defrag-Simulator</a></h4>
+<h4><img src="assets/icons/disk.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;<a href="https://github.com/GeekLord/Win98-Defrag-Simulator">Win98-Defrag-Simulator</a></h4>
 <p><sub>The Windows 98 Disk Defragmenter, rebuilt in the browser. Pure nostalgia, no disks harmed.</sub></p>
 <p><code>JavaScript</code> <code>Just for fun</code></p>
 
@@ -279,7 +279,7 @@
 <tr>
 <td width="50%" valign="top">
 
-<h3>🎓 Souters Training Portal &amp; Executive LMS</h3>
+<h3><img src="assets/icons/cap.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Souters Training Portal &amp; Executive LMS</h3>
 
 <p><sub><b>London, UK</b> · 2010 &middot; current platform 2021</sub></p>
 
@@ -291,7 +291,7 @@ enrolment. Continuous <b>99.9% uptime since 2021</b>, sub-second pages under rea
 </td>
 <td width="50%" valign="top">
 
-<h3>🌍 Global Field Research Data Suite</h3>
+<h3><img src="assets/icons/globe.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Global Field Research Data Suite</h3>
 
 <p><sub><b>International research consortia</b> · 12+ countries</sub></p>
 
@@ -305,7 +305,7 @@ enrolment. Continuous <b>99.9% uptime since 2021</b>, sub-second pages under rea
 <tr>
 <td width="50%" valign="top">
 
-<h3>📊 Morsel Research Web &amp; Cloud Data Hub</h3>
+<h3><img src="assets/icons/chart.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Morsel Research Web &amp; Cloud Data Hub</h3>
 
 <p><sub><b>New Delhi &amp; Lucknow</b> · 2013 &ndash; present</sub></p>
 
@@ -317,7 +317,7 @@ for roughly <b>400 studies covering ~20M surveyed respondents</b>.</p>
 </td>
 <td width="50%" valign="top">
 
-<h3>🧰 Field tooling &amp; agent experiments</h3>
+<h3><img src="assets/icons/toolbox.svg" width="22" height="22" alt="" align="absmiddle">&nbsp;Field tooling &amp; agent experiments</h3>
 
 <p><sub><b>Open source</b> · <a href="https://github.com/GeekLord?tab=repositories">28 own repositories</a></sub></p>
 
@@ -338,11 +338,11 @@ pointless Windows 98 defrag simulator.</p>
 <div align="center">
 <h2>Verified credentials</h2>
 
-<a href="https://www.credly.com/badges/68270912-06ac-42f7-a647-972ea1145e77/public_url"><img src="https://img.shields.io/badge/Nebius-Agentic_AI_Builder_Certified-8B6BFF?style=for-the-badge" alt="Nebius Agentic AI Builder"></a>
-<a href="https://www.credly.com/badges/90080792-8f6a-4f5e-934c-1e24194875c3/public_url"><img src="https://img.shields.io/badge/Nebius-AI_Leader_Certified-35D6F2?style=for-the-badge" alt="Nebius AI Leader"></a>
-<a href="https://www.credly.com/badges/c93f7b4e-c037-4d14-a78c-843be69fbfd0/public_url"><img src="https://img.shields.io/badge/Google_Cloud-Prompt_Design_in_Vertex_AI-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud Vertex AI"></a>
-<a href="https://www.credly.com/badges/83820826-787a-4a60-9064-9cd3cd2cb492/public_url"><img src="https://img.shields.io/badge/Harvey-Level_1_Legal_Engineer-F2B33D?style=for-the-badge" alt="Harvey Legal Engineer"></a>
-<a href="https://shobhit.net/about/#claude-academy"><img src="https://img.shields.io/badge/Anthropic-15_Claude_Academy_badges-EA4335?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Academy"></a>
+<a href="https://www.credly.com/badges/68270912-06ac-42f7-a647-972ea1145e77/public_url"><img src="https://img.shields.io/badge/Nebius-Agentic_AI_Builder_Certified-722F37?style=for-the-badge&labelColor=3A1218&logoColor=F4F2EE" alt="Nebius Agentic AI Builder"></a>
+<a href="https://www.credly.com/badges/90080792-8f6a-4f5e-934c-1e24194875c3/public_url"><img src="https://img.shields.io/badge/Nebius-AI_Leader_Certified-722F37?style=for-the-badge&labelColor=3A1218&logoColor=F4F2EE" alt="Nebius AI Leader"></a>
+<a href="https://www.credly.com/badges/c93f7b4e-c037-4d14-a78c-843be69fbfd0/public_url"><img src="https://img.shields.io/badge/Google_Cloud-Prompt_Design_in_Vertex_AI-722F37?style=for-the-badge&logo=googlecloud&labelColor=3A1218&logoColor=F4F2EE" alt="Google Cloud Vertex AI"></a>
+<a href="https://www.credly.com/badges/83820826-787a-4a60-9064-9cd3cd2cb492/public_url"><img src="https://img.shields.io/badge/Harvey-Level_1_Legal_Engineer-722F37?style=for-the-badge&labelColor=3A1218&logoColor=F4F2EE" alt="Harvey Legal Engineer"></a>
+<a href="https://shobhit.net/about/#claude-academy"><img src="https://img.shields.io/badge/Anthropic-15_Claude_Academy_badges-722F37?style=for-the-badge&logo=anthropic&labelColor=3A1218&logoColor=F4F2EE" alt="Claude Academy"></a>
 
 <br><br>
 
@@ -377,14 +377,14 @@ pointless Windows 98 defrag simulator.</p>
 <tr>
 <td align="center" width="25%">
 
-<h4>✉️ Email</h4>
+<h4><img src="assets/icons/mail.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;Email</h4>
 
 <p><a href="mailto:shobhit@shobhit.net">shobhit@shobhit.net</a></p>
 
 </td>
 <td align="center" width="25%">
 
-<h4>📞 Phone</h4>
+<h4><img src="assets/icons/phone.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;Phone</h4>
 
 <p><a href="https://geeklord.github.io/call/">+91 79658 52100</a></p>
 
@@ -393,14 +393,14 @@ pointless Windows 98 defrag simulator.</p>
 </td>
 <td align="center" width="25%">
 
-<h4>📝 Project brief</h4>
+<h4><img src="assets/icons/pen.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;Project brief</h4>
 
 <p><a href="https://shobhit.net/contact/">shobhit.net/contact</a></p>
 
 </td>
 <td align="center" width="25%">
 
-<h4>📍 Based in</h4>
+<h4><img src="assets/icons/pin.svg" width="20" height="20" alt="" align="absmiddle">&nbsp;Based in</h4>
 
 <p>Lucknow, Uttar Pradesh, India</p>
 
@@ -419,8 +419,8 @@ pointless Windows 98 defrag simulator.</p>
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=8B6BFF&label=PROFILE+VIEWS">
-  <img src="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=5B3AE0&label=PROFILE+VIEWS" alt="Profile views">
+  <source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=D46B7A&label=PROFILE+VIEWS">
+  <img src="https://komarev.com/ghpvc/?username=GeekLord&style=for-the-badge&color=722F37&label=PROFILE+VIEWS" alt="Profile views">
 </picture>
 
 <br><br>

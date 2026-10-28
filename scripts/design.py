@@ -29,58 +29,67 @@ FONT_DIR = Path(__file__).resolve().parent / "fonts"
 # Theme tokens
 # --------------------------------------------------------------------------
 
+# Palette: wine red on Pampas.
+#   Light mode is Pampas paper (#F4F2EE) carrying wine ink (#722F37).
+#   Dark mode is a wine cellar: near-black claret surfaces lit by Pampas text,
+#   with the wine lifted in lightness so it still reads at small sizes.
+# Role names are semantic: `wine` is the primary accent, `rose` the secondary,
+# `brass` a warm highlight and `sage` the "live / available" status colour.
+
 DARK = {
     "name": "dark",
-    "ink": "#E8EEF9",  # primary text
-    "ink_soft": "#B9C7DE",  # secondary text
-    "muted": "#8FA3C2",  # labels
-    "faint": "#63779A",  # de-emphasised text
-    "canvas": "#0B1220",
-    "panel": "#111C31",
-    "panel_alt": "#152238",
-    "line": "#27395A",
-    "line_soft": "#1D2C46",
-    "violet": "#8B6BFF",
-    "cyan": "#35D6F2",
-    "amber": "#F2B33D",
-    "green": "#42D392",
-    "chip_bg": "#16233C",
-    "chip_line": "#2C4270",
+    "ink": "#F4F2EE",  # Pampas — primary text
+    "ink_soft": "#E2D8CE",  # secondary text
+    "muted": "#BCA9A3",  # labels
+    "faint": "#A08D89",  # de-emphasised text (still >= 4.5:1 on panel)
+    "display": "#F4F2EE",  # the name in the banner
+    "canvas": "#1A0E11",
+    "panel": "#221318",
+    "panel_alt": "#2A171D",
+    "line": "#4A2A32",
+    "line_soft": "#382027",
+    "wine": "#D46B7A",  # wine lifted for a dark ground
+    "rose": "#EBA9B0",
+    "brass": "#D9AE68",
+    "sage": "#A3BF94",
+    "chip_bg": "#2A171D",
+    "chip_line": "#553039",
     "glow": "0.85",
-    "grid": "#1B2A45",
-    "cell0": "#16233B",
-    "cell1": "#243B63",
-    "cell2": "#4E63C8",
-    "cell3": "#7C6BF5",
-    "cell4": "#54D7EE",
-    "shadow": "#05080F",
+    "grid": "#3A2229",
+    "cell0": "#2C1A1F",
+    "cell1": "#55262F",
+    "cell2": "#8A3443",
+    "cell3": "#C2546A",
+    "cell4": "#F0B3B9",
+    "shadow": "#0A0506",
 }
 
 LIGHT = {
     "name": "light",
-    "ink": "#0C1526",
-    "ink_soft": "#33445F",
-    "muted": "#5B6E8C",
-    "faint": "#8194AF",
-    "canvas": "#FFFFFF",
-    "panel": "#F7F9FD",
-    "panel_alt": "#EEF3FB",
-    "line": "#D6E0EF",
-    "line_soft": "#E5EBF5",
-    "violet": "#5B3AE0",
-    "cyan": "#0E7F9E",
-    "amber": "#B26A00",
-    "green": "#0E8A5F",
-    "chip_bg": "#F0F4FC",
-    "chip_line": "#DBE4F2",
+    "ink": "#2A1216",  # wine-black
+    "ink_soft": "#4E2E33",
+    "muted": "#6B5054",
+    "faint": "#725A5E",
+    "display": "#722F37",  # wine red
+    "canvas": "#F4F2EE",  # Pampas
+    "panel": "#EFEBE5",
+    "panel_alt": "#E8E1D8",
+    "line": "#DCD2C6",
+    "line_soft": "#E6DED3",
+    "wine": "#722F37",
+    "rose": "#9C3B4A",
+    "brass": "#7C5A1B",
+    "sage": "#46663F",
+    "chip_bg": "#FAF8F5",
+    "chip_line": "#DCCFC4",
     "glow": "0.55",
-    "grid": "#DCE5F3",
-    "cell0": "#E9EEF7",
-    "cell1": "#C9D9F2",
-    "cell2": "#94B4EC",
-    "cell3": "#6A86E8",
-    "cell4": "#2FB6D6",
-    "shadow": "#C9D5E6",
+    "grid": "#DDD3C7",
+    "cell0": "#E6DFD5",
+    "cell1": "#E5C2C3",
+    "cell2": "#C9838C",
+    "cell3": "#9C3B4A",
+    "cell4": "#5E1F28",
+    "shadow": "#D9CEC0",
 }
 
 THEMES = {"dark": DARK, "light": LIGHT}
@@ -185,8 +194,8 @@ class FontBook:
 def accent_gradient(theme: dict, gradient_id: str = "accent", x1=0, y1=0, x2=1, y2=1) -> str:
     return (
         f'<linearGradient id="{gradient_id}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}">'
-        f'<stop offset="0" stop-color="{theme["violet"]}"/>'
-        f'<stop offset="1" stop-color="{theme["cyan"]}"/>'
+        f'<stop offset="0" stop-color="{theme["wine"]}"/>'
+        f'<stop offset="1" stop-color="{theme["rose"]}"/>'
         "</linearGradient>"
     )
 

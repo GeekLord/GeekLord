@@ -54,8 +54,10 @@ FALLBACK_STATS = {
     "generated_at": "2026-10-15T00:00:00Z",
 }
 PALETTE = {
-    "dark": ["#8B6BFF", "#35D6F2", "#42D392", "#F2B33D", "#6E8BFF", "#FF7AB8", "#7E8FAE"],
-    "light": ["#5B3AE0", "#0E7F9E", "#0E8A5F", "#B26A00", "#3B62D6", "#C43B7E", "#7B8CA6"],
+    # Wine, brass, sage, Pampas-stone, plum, clay, taupe: distinct in lightness
+    # as well as hue, so the language bar still separates for colour-blind readers.
+    "dark": ["#D46B7A", "#D9AE68", "#A3BF94", "#E9E1D6", "#B48AB0", "#E0906A", "#9C8B86"],
+    "light": ["#722F37", "#B08A3E", "#5E7F56", "#C9BBA8", "#6E4566", "#A8552E", "#857570"],
 }
 
 
@@ -125,51 +127,55 @@ def build_banner() -> str:
         defs = (
             accent_gradient(t, "accent")
             + f'<linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">'
-            f'<stop offset="0" stop-color="{t["violet"]}" stop-opacity="0.16"/>'
-            f'<stop offset="0.55" stop-color="{t["violet"]}" stop-opacity="0.05"/>'
-            f'<stop offset="1" stop-color="{t["cyan"]}" stop-opacity="0.14"/></linearGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}" stop-opacity="0.16"/>'
+            f'<stop offset="0.55" stop-color="{t["wine"]}" stop-opacity="0.05"/>'
+            f'<stop offset="1" stop-color="{t["rose"]}" stop-opacity="0.14"/></linearGradient>'
             + f'<radialGradient id="orbA" cx="0.5" cy="0.5" r="0.5">'
-            f'<stop offset="0" stop-color="{t["violet"]}" stop-opacity="0.30"/>'
-            f'<stop offset="1" stop-color="{t["violet"]}" stop-opacity="0"/></radialGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}" stop-opacity="0.30"/>'
+            f'<stop offset="1" stop-color="{t["wine"]}" stop-opacity="0"/></radialGradient>'
             + f'<radialGradient id="orbB" cx="0.5" cy="0.5" r="0.5">'
-            f'<stop offset="0" stop-color="{t["cyan"]}" stop-opacity="0.22"/>'
-            f'<stop offset="1" stop-color="{t["cyan"]}" stop-opacity="0"/></radialGradient>'
+            f'<stop offset="0" stop-color="{t["rose"]}" stop-opacity="0.22"/>'
+            f'<stop offset="1" stop-color="{t["rose"]}" stop-opacity="0"/></radialGradient>'
+            + f'<clipPath id="card"><rect x="24" y="24" width="{width - 48}" height="{height - 48}" rx="26"/></clipPath>'
         )
         body = []
 
-        # Card wash + hairlines
+        # Solid ground first (Pampas paper / cellar), then the wash + hairlines
+        body.append(rect(24, 24, width - 48, height - 48, rx=26, fill=t["canvas"]))
         body.append(rect(24, 24, width - 48, height - 48, rx=26, fill="url(#wash)",
                          stroke=t["line"], stroke_opacity=0.75 if t is DARK else 1))
         body.append(rect(24, 24, width - 48, height - 48, rx=26, fill="none",
-                         stroke=t["violet"], stroke_opacity=0.22))
-        body.append(line(24 + 26, 24, width - 24 - 26, 24, stroke=t["cyan"], width=1.4, opacity=0.5))
+                         stroke=t["wine"], stroke_opacity=0.22))
+        body.append(line(24 + 26, 24, width - 24 - 26, 24, stroke=t["rose"], width=1.4, opacity=0.5))
 
-        # Ambient art: dot grid + soft orbs + orbit arcs
+        # Ambient art: dot grid + soft orbs + orbit arcs, clipped to the card
+        body.append('<g clip-path="url(#card)">')
         body.append(dotted_grid(1044, 250, 9, 8, 13, 1.0, t["grid"], 0.7))
         body.append(f'<ellipse cx="1078" cy="286" rx="150" ry="118" fill="url(#orbA)"/>')
         body.append(f'<ellipse cx="1122" cy="344" rx="128" ry="104" fill="url(#orbB)"/>')
         for radius, opacity in ((74, 0.22), (112, 0.13), (150, 0.07)):
             body.append(
-                f'<circle cx="1062" cy="300" r="{radius}" fill="none" stroke="{t["violet"]}" '
+                f'<circle cx="1062" cy="300" r="{radius}" fill="none" stroke="{t["wine"]}" '
                 f'stroke-opacity="{opacity}" stroke-width="1"/>'
             )
         body.append(
-            f'<circle cx="1062" cy="300" r="4.5" fill="none" stroke="{t["cyan"]}" stroke-width="1.5">'
+            f'<circle cx="1062" cy="300" r="4.5" fill="none" stroke="{t["rose"]}" stroke-width="1.5">'
             f'<animate attributeName="r" values="4.5;26" dur="3s" repeatCount="indefinite"/>'
             f'<animate attributeName="stroke-opacity" values="0.8;0" dur="3s" repeatCount="indefinite"/>'
             f'</circle>')
-        body.append(f'<circle cx="1062" cy="300" r="4.5" fill="{t["cyan"]}"/>')
+        body.append(f'<circle cx="1062" cy="300" r="4.5" fill="{t["rose"]}"/>')
         # Satellites ride the three orbit rings at different speeds.
-        for radius, period, start, colour in ((74, 14, 180, t["violet"]), (112, 22, 0, t["violet"]),
-                                              (150, 34, 120, t["cyan"])):
+        for radius, period, start, colour in ((74, 14, 180, t["wine"]), (112, 22, 0, t["wine"]),
+                                              (150, 34, 120, t["rose"])):
             body.append(
                 f'<g><animateTransform attributeName="transform" type="rotate" '
                 f'from="{start} 1062 300" to="{start + 360} 1062 300" dur="{period}s" '
                 f'repeatCount="indefinite"/>'
                 f'<circle cx="{1062 + radius}" cy="300" r="3.2" fill="{colour}" fill-opacity="0.95"/></g>')
+        body.append('</g>')
 
         # Eyebrow
-        body.append(rect(76, 74, 4, 15, rx=2, fill=t["violet"]))
+        body.append(rect(76, 74, 4, 15, rx=2, fill=t["wine"]))
         body.append(text(
             90, 86.5, "SOFTWARE ARCHITECT  ·  FOUNDER, CYBER MITRA SOLUTIONS", book=book,
             family="mono", size=12.5, fill=t["muted"], tracking=0.14))
@@ -178,9 +184,9 @@ def build_banner() -> str:
         label = "OPEN TO SELECT ENGAGEMENTS"
         pill_w = text_width(label, "mono", 400, 12, 0.12) + 48
         pill_x = width - 66 - pill_w
-        body.append(rect(pill_x, 70, pill_w, 30, rx=15, fill=t["chip_bg"], stroke=t["green"],
+        body.append(rect(pill_x, 70, pill_w, 30, rx=15, fill=t["chip_bg"], stroke=t["sage"],
                          stroke_opacity=0.55))
-        body.append(f'<circle cx="{pill_x + 17}" cy="85" r="4.5" fill="{t["green"]}">'
+        body.append(f'<circle cx="{pill_x + 17}" cy="85" r="4.5" fill="{t["sage"]}">'
                     f'<animate attributeName="fill-opacity" values="1;0.35;1" dur="2s" '
                     f'repeatCount="indefinite"/></circle>')
         body.append(text(pill_x + 30, 89.5, label, book=book, family="mono", size=12,
@@ -188,7 +194,7 @@ def build_banner() -> str:
 
         # Name
         body.append(text(74, 190, "Shobhit Kumar Prabhakar", book=book, weight=600, size=64,
-                         gradient="accent", tracking=-0.022))
+                         fill=t["display"], tracking=-0.022))
         # Tagline
         body.append(text(76, 236, "Complex challenges. Dependable systems.", book=book,
                          weight=500, size=25, fill=t["ink_soft"], tracking=-0.005))
@@ -200,10 +206,10 @@ def build_banner() -> str:
         y = 296
         x = 76
         for label_text, accent in (
-            ("20+ YEARS ENGINEERING", t["violet"]),
-            ("850+ WEB PLATFORMS", t["cyan"]),
-            ("600+ FIELD INSTRUMENTS", t["violet"]),
-            ("12+ COUNTRIES", t["cyan"]),
+            ("20+ YEARS ENGINEERING", t["wine"]),
+            ("850+ WEB PLATFORMS", t["rose"]),
+            ("600+ FIELD INSTRUMENTS", t["wine"]),
+            ("12+ COUNTRIES", t["rose"]),
         ):
             markup, used = chip(x, y, label_text, t, book, size=12, height=28,
                                 accent=accent, weight=400)
@@ -228,11 +234,11 @@ def build_divider() -> str:
     theme = DARK
     defs = (
         f'<linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">'
-        f'<stop offset="0" stop-color="{theme["violet"]}" stop-opacity="0"/>'
-        f'<stop offset="0.18" stop-color="{theme["violet"]}" stop-opacity="0.55"/>'
-        f'<stop offset="0.5" stop-color="{theme["cyan"]}" stop-opacity="0.75"/>'
-        f'<stop offset="0.82" stop-color="{theme["violet"]}" stop-opacity="0.55"/>'
-        f'<stop offset="1" stop-color="{theme["violet"]}" stop-opacity="0"/></linearGradient>'
+        f'<stop offset="0" stop-color="{theme["wine"]}" stop-opacity="0"/>'
+        f'<stop offset="0.18" stop-color="{theme["wine"]}" stop-opacity="0.55"/>'
+        f'<stop offset="0.5" stop-color="{theme["rose"]}" stop-opacity="0.75"/>'
+        f'<stop offset="0.82" stop-color="{theme["wine"]}" stop-opacity="0.55"/>'
+        f'<stop offset="1" stop-color="{theme["wine"]}" stop-opacity="0"/></linearGradient>'
         f'<linearGradient id="spark" x1="0" y1="0" x2="1" y2="0">'
         f'<stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>'
         f'<stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.9"/>'
@@ -243,7 +249,7 @@ def build_divider() -> str:
         f'<rect x="-160" y="17.5" width="160" height="3.5" rx="1.75" fill="url(#spark)">'
         f'<animate attributeName="x" values="-160;{CANVAS}" dur="4.5s" repeatCount="indefinite"/>'
         f'</rect>',
-        f'<path d="M{CANVAS / 2 - 7} 19.2 l7 -6 l7 6 l-7 6 z" fill="{theme["cyan"]}" '
+        f'<path d="M{CANVAS / 2 - 7} 19.2 l7 -6 l7 6 l-7 6 z" fill="{theme["rose"]}" '
         f'fill-opacity="0.9"><animate attributeName="fill-opacity" values="0.9;0.35;0.9" '
         f'dur="2.4s" repeatCount="indefinite"/></path>',
     ]
@@ -281,7 +287,7 @@ def build_stats(stats: dict) -> str:
             "@media (prefers-reduced-motion:reduce){.tile{animation:none;opacity:1}.bar{animation:none}}"
             "</style>",
             panel(0, 0, width, height, t, radius=22, fill=t["panel"], stroke=t["line"]),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["cyan"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["rose"]),
             text(40, 37, "LIVE FROM GITHUB", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
         ]
@@ -337,7 +343,7 @@ def build_languages(languages) -> str:
         defs = accent_gradient(t, "accent")
         body = [
             panel(0, 0, width, height, t, radius=22),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["violet"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["wine"]),
             text(40, 37, "WHERE THE CODE LIVES", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
             text(width - 28, 37, "own repositories · by primary language", book=book,
@@ -364,7 +370,7 @@ def build_languages(languages) -> str:
             detail = item.get("detail") or f'{item.get("repos", 0)} repos'
             detail_w = text_width(detail, "mono", 400, 11)
             box_w = max(label_w + 44, detail_w + 30) + 26
-            if legend_x + box_w > width - 28:
+            if legend_x + box_w + 12 + detail_w > width - 28:  # chip *and* its note must fit
                 legend_x = 28
                 legend_y += row_step
             body.append(rect(legend_x, legend_y, box_w, 32, rx=10, fill=t["chip_bg"],
@@ -410,7 +416,7 @@ def build_toolkit() -> str:
         defs = accent_gradient(t, "accent")
         body = [
             panel(0, 0, width, height, t, radius=22),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["cyan"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["rose"]),
             text(40, 37, "TOOLKIT & STACK", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
             text(width - 28, 37, "battle-tested, not aspirational", book=book, family="mono",
@@ -457,8 +463,8 @@ def build_timeline() -> str:
         defs = (
             accent_gradient(t, "accent")
             + f'<linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">'
-            f'<stop offset="0" stop-color="{t["violet"]}"/>'
-            f'<stop offset="1" stop-color="{t["cyan"]}"/></linearGradient>'
+            f'<stop offset="0" stop-color="{t["wine"]}"/>'
+            f'<stop offset="1" stop-color="{t["rose"]}"/></linearGradient>'
         )
         # Each milestone owns one equal column; labels centred in their column can
         # never spill past the card because the outer columns absorb the margins.
@@ -468,7 +474,7 @@ def build_timeline() -> str:
         x1 = width - margin - node_w / 2
         body = [
             panel(0, 0, width, height, t, radius=22),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["violet"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["wine"]),
             text(40, 37, "TWO DECADES, ONE THREAD", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
             text(width - 28, 37, "build systems that outlive the launch", book=book,
@@ -478,7 +484,7 @@ def build_timeline() -> str:
         step = (x1 - x0) / (len(MILESTONES) - 1)
         for index, (year, title, note) in enumerate(MILESTONES):
             cx = x0 + step * index
-            colour = t["violet"] if index % 2 == 0 else t["cyan"]
+            colour = t["wine"] if index % 2 == 0 else t["rose"]
             body.append(f'<circle cx="{cx:.1f}" cy="99.25" r="9" fill="{t["panel"]}"/>')
             body.append(f'<circle cx="{cx:.1f}" cy="99.25" r="5.5" fill="{colour}"/>')
             if index == len(MILESTONES) - 1:
@@ -507,19 +513,19 @@ def build_timeline() -> str:
 # --------------------------------------------------------------------------
 
 BLUEPRINT = [
-    ("FIELD DATA", "violet", [
+    ("FIELD DATA", "wine", [
         ("01", "Offline capture", "SurveyCTO · ODK · XLSForm"),
         ("02", "In-form validation", "calculates · constraints"),
         ("03", "Daily audits", "Python QC pipelines"),
         ("04", "Clean delivery", "protected research lake"),
     ]),
-    ("WEB PLATFORMS", "cyan", [
+    ("WEB PLATFORMS", "rose", [
         ("01", "Design system", "tokens · components"),
         ("02", "Sub-second delivery", "Astro · React · Vite"),
         ("03", "Hardened infra", "AWS · Cloudflare · Nginx"),
         ("04", "Zero-downtime release", "GitHub Actions CI/CD"),
     ]),
-    ("AI SYSTEMS", "violet", [
+    ("AI SYSTEMS", "wine", [
         ("01", "Private corpus", "docs · PDFs · catalogues"),
         ("02", "Hybrid retrieval", "embeddings + BM25"),
         ("03", "Guardrails & evals", "schemas · cost caps"),
@@ -540,7 +546,7 @@ def build_blueprint() -> str:
         defs = accent_gradient(t, "accent")
         body = [
             panel(0, 0, width, height, t, radius=22),
-            rect(28, 26, 3, 13, rx=1.5, fill=t["violet"]),
+            rect(28, 26, 3, 13, rx=1.5, fill=t["wine"]),
             text(40, 37, "ENGINEERING BLUEPRINT", book=book, family="mono", size=11.5,
                  fill=t["muted"], tracking=0.16),
             text(width - 28, 37, "three production pipelines, stripped to essentials", book=book,
@@ -739,7 +745,7 @@ def build_crawl(calendar: dict, *, inline: bool = False, static: bool = False) -
         else:
             body.append(panel(0, 0, geo.width, geo.height, t, radius=22))
         body.append(rect(geo.pad, 32, 3, 13, rx=1.5,
-                         fill="var(--accent)" if css else t["violet"]))
+                         fill="var(--accent)" if css else t["wine"]))
         body.append(text(geo.pad + 12, 43, heading, book=book, family="mono", size=11.5,
                          fill=t["muted"] if not css else "currentColor", tracking=0.16))
         body.append(text(geo.width - geo.pad, 43, sub, book=book, family="mono", size=11.5,
@@ -845,6 +851,29 @@ def build_crawl(calendar: dict, *, inline: bool = False, static: bool = False) -
 
 
 # --------------------------------------------------------------------------
+# README heading icons
+# --------------------------------------------------------------------------
+
+# One mid-wine stroke that clears 3:1 on both GitHub page grounds
+# (white #FFFFFF and dark #0D1117), so a single file serves both themes.
+ICON_STROKE = "#B5505F"
+README_ICONS = ("clipboard", "bolt", "robot", "building", "chat", "wallet", "mic", "image",
+                "film", "ballot", "search", "disk", "cap", "globe", "chart", "toolbox",
+                "mail", "phone", "pen", "pin")
+
+
+def build_icons() -> str:
+    from build_site import ICONS  # same hand-drawn set the micro-site uses
+
+    for name in README_ICONS:
+        write(ASSETS / "icons" / f"{name}.svg",
+              '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" '
+              f'fill="none" stroke="{ICON_STROKE}" stroke-width="1.7" stroke-linecap="round" '
+              f'stroke-linejoin="round">{ICONS[name]}</svg>')
+    return "icons"
+
+
+# --------------------------------------------------------------------------
 # Entry point
 # --------------------------------------------------------------------------
 
@@ -863,6 +892,7 @@ def main() -> None:
         build_timeline(),
         build_blueprint(),
         build_crawl(calendar, inline=True),
+        build_icons(),
     ]
     built += build_motion.build_all()
     print("built:", ", ".join(built))

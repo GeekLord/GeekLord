@@ -199,6 +199,18 @@ ICONS = {
     "pen": '<path d="M4.5 19.5 5.7 15 16 4.7a2.1 2.1 0 0 1 3 3L8.7 18z"/><path d="M14.5 6.2 17.8 9.5"/>',
     "badge": '<circle cx="12" cy="10" r="5.5"/><path d="m9 15-1.5 5.5 4.5-2.3 4.5 2.3L15 15"/>',
     "clock": '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+    # Added for the README headings (exported to assets/icons/ by build_assets.py).
+    "chat": '<path d="M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8.5A1.5 1.5 0 0 1 19 17h-8l-4.5 3.5V17H5a1.5 1.5 0 0 1-1.5-1.5V7A1.5 1.5 0 0 1 5 5.5z"/><path d="M8 10h8M8 13h5"/>',
+    "wallet": '<path d="M4 8V7.5a2 2 0 0 1 2-2h10.5V8.5"/><rect x="4" y="8.5" width="16.5" height="10.5" rx="2"/><path d="M15.5 13.75h2"/>',
+    "mic": '<rect x="9" y="3.5" width="6" height="10.5" rx="3"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3M9 20.5h6"/>',
+    "image": '<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4.5 17.5 5-5 3.5 3.5 2.5-2.5 4 4"/>',
+    "film": '<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M7.5 5v14M16.5 5v14M3.5 9.5h4M3.5 14.5h4M16.5 9.5h4M16.5 14.5h4"/>',
+    "ballot": '<path d="M7 12V4.5h10V12"/><path d="m9.5 8 1.8 1.8L14.5 6.5"/><path d="M3.5 12h17v7.5h-17z"/><path d="M8.5 15.5h7"/>',
+    "search": '<circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/>',
+    "disk": '<path d="M5 4.5h11.5l3 3V18a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 18V6A1.5 1.5 0 0 1 5 4.5z"/><path d="M7.5 4.5v4.5h7.5V4.5"/><rect x="7" y="13" width="10" height="6.5" rx="1"/>',
+    "chart": '<path d="M4 19.5h16"/><path d="M6.5 16v-4.5M10.5 16V7.5M14.5 16v-6M18.5 16V4.5"/>',
+    "toolbox": '<rect x="3.5" y="8.5" width="17" height="11" rx="2"/><path d="M9 8.5V6a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 6v2.5"/><path d="M3.5 13h17M10 13v2h4v-2"/>',
+    "pin": '<path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
     "spark": '<path d="M12 4v4M12 16v4M4 12h4M16 12h4"/><path d="m7.5 7.5 2 2M14.5 14.5l2 2M16.5 7.5l-2 2M9.5 14.5l-2 2"/>',
 }
 
@@ -211,7 +223,7 @@ def icon(name: str, *, size: int = 20, css_class: str = "ico") -> str:
 
 
 PALETTE = {
-    "dark": ["#8B6BFF", "#35D6F2", "#42D392", "#F2B33D", "#6E8BFF", "#FF7AB8", "#7E8FAE"],
+    "dark": ["#D46B7A", "#D9AE68", "#A3BF94", "#E9E1D6", "#B48AB0", "#E0906A", "#9C8B86"],
 }
 
 TEXT_FILES = {"SpaceGrotesk": {
@@ -697,8 +709,8 @@ def build_page(stats: dict, calendar: dict, languages: dict) -> str:
 <title>Shobhit Kumar Prabhakar · GeekLord — Software Architect</title>
 <meta name="description" content="Software architect engineering dependable web platforms, offline-first field-data systems and grounded AI workflows. Founder of Cyber Mitra Solutions, Lucknow, India.">
 <meta name="author" content="Shobhit Kumar Prabhakar">
-<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a0e11" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f2ee" media="(prefers-color-scheme: light)">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Shobhit Kumar Prabhakar · GeekLord — Software Architect">
 <meta property="og:description" content="Complex challenges. Dependable systems. Web platforms, field-data instruments and grounded AI workflows.">
