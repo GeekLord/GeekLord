@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T09:43:41+00:00",
+  "generated_at": "2026-11-01T10:33:15+00:00",
   "timezone": "Asia/Kolkata (IST)",
   "sample": 300,
   "hours": [
@@ -9,19 +9,19 @@
     },
     {
       "hour": 1,
-      "events": 37
+      "events": 36
     },
     {
       "hour": 2,
-      "events": 20
+      "events": 19
     },
     {
       "hour": 3,
-      "events": 177
+      "events": 181
     },
     {
       "hour": 4,
-      "events": 3
+      "events": 1
     },
     {
       "hour": 5,
