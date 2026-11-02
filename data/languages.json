@@ -1,74 +1,74 @@
 {
-  "generated_at": "2026-11-01T10:33:13+00:00",
+  "generated_at": "2026-11-02T11:17:56+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
       "name": "Python",
-      "repos": 7,
-      "share": 26.92,
-      "detail": "7 repos",
-      "bytes": 800237
+      "repos": 8,
+      "share": 29.63,
+      "detail": "8 repos",
+      "bytes": 900526
     },
     {
       "name": "JavaScript",
       "repos": 5,
-      "share": 19.23,
+      "share": 18.52,
       "detail": "5 repos",
       "bytes": 316257
     },
     {
       "name": "TypeScript",
       "repos": 5,
-      "share": 19.23,
+      "share": 18.52,
       "detail": "5 repos",
       "bytes": 1965112
     },
     {
       "name": "HTML",
       "repos": 3,
-      "share": 11.54,
+      "share": 11.11,
       "detail": "3 repos",
-      "bytes": 3051587
+      "bytes": 3127474
     },
     {
       "name": "Shell",
       "repos": 2,
-      "share": 7.69,
+      "share": 7.41,
       "detail": "2 repos",
       "bytes": 11362
     },
     {
       "name": "Astro",
       "repos": 1,
-      "share": 3.85,
+      "share": 3.7,
       "detail": "1 repo",
       "bytes": 82211
     },
     {
       "name": "PowerShell",
       "repos": 1,
-      "share": 3.85,
+      "share": 3.7,
       "detail": "1 repo",
       "bytes": 19364
     },
     {
       "name": "PHP",
       "repos": 1,
-      "share": 3.85,
+      "share": 3.7,
       "detail": "1 repo",
       "bytes": 16888
     },
     {
       "name": "Java",
       "repos": 1,
-      "share": 3.85,
+      "share": 3.7,
       "detail": "1 repo",
       "bytes": 400773
     },
     {
       "name": "Docs / config",
       "repos": 2,
-      "share": 7.14,
+      "share": 6.9,
       "detail": "2 repos",
       "bytes": 0
     }
@@ -76,7 +76,7 @@
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 3051587
+      "bytes": 3127474
     },
     {
       "name": "TypeScript",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Python",
-      "bytes": 800237
+      "bytes": 900526
     },
     {
       "name": "Java",
@@ -125,6 +125,10 @@
     {
       "name": "Makefile",
       "bytes": 1291
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 529
     }
   ]
 }
