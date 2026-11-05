@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T10:57:41+00:00",
+  "generated_at": "2026-11-05T11:01:38+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
@@ -7,7 +7,7 @@
       "repos": 8,
       "share": 29.63,
       "detail": "8 repos",
-      "bytes": 900526
+      "bytes": 949607
     },
     {
       "name": "JavaScript",
@@ -28,7 +28,7 @@
       "repos": 3,
       "share": 11.11,
       "detail": "3 repos",
-      "bytes": 3127494
+      "bytes": 3142786
     },
     {
       "name": "Shell",
@@ -76,7 +76,7 @@
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 3127494
+      "bytes": 3142786
     },
     {
       "name": "TypeScript",
@@ -84,7 +84,7 @@
     },
     {
       "name": "Python",
-      "bytes": 900526
+      "bytes": 949607
     },
     {
       "name": "Java",
@@ -128,7 +128,7 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 529
+      "bytes": 624
     }
   ]
 }
