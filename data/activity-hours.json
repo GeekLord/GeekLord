@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T10:59:35+00:00",
+  "generated_at": "2026-11-07T10:19:50+00:00",
   "timezone": "Asia/Kolkata (IST)",
-  "sample": 257,
+  "sample": 249,
   "hours": [
     {
       "hour": 0,
@@ -17,11 +17,11 @@
     },
     {
       "hour": 3,
-      "events": 181
+      "events": 174
     },
     {
       "hour": 4,
-      "events": 2
+      "events": 0
     },
     {
       "hour": 5,
@@ -61,7 +61,7 @@
     },
     {
       "hour": 14,
-      "events": 1
+      "events": 2
     },
     {
       "hour": 15,
