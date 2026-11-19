@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T11:50:20+00:00",
+  "generated_at": "2026-11-19T11:46:58+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
@@ -28,7 +28,7 @@
       "repos": 3,
       "share": 10.34,
       "detail": "3 repos",
-      "bytes": 3142979
+      "bytes": 3142969
     },
     {
       "name": "Shell",
@@ -38,18 +38,18 @@
       "bytes": 20089
     },
     {
-      "name": "C#",
-      "repos": 1,
-      "share": 3.45,
-      "detail": "1 repo",
-      "bytes": 329550
-    },
-    {
       "name": "Astro",
       "repos": 1,
       "share": 3.45,
       "detail": "1 repo",
       "bytes": 82211
+    },
+    {
+      "name": "C#",
+      "repos": 1,
+      "share": 3.45,
+      "detail": "1 repo",
+      "bytes": 329550
     },
     {
       "name": "PowerShell",
@@ -83,7 +83,7 @@
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 3142979
+      "bytes": 3142969
     },
     {
       "name": "TypeScript",
