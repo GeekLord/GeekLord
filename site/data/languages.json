@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:50:02+00:00",
+  "generated_at": "2026-11-25T13:03:29+00:00",
   "basis": "own non-fork repositories, counted by primary language",
   "by_repo": [
     {
@@ -28,7 +28,7 @@
       "repos": 3,
       "share": 10.34,
       "detail": "3 repos",
-      "bytes": 3142823
+      "bytes": 3143059
     },
     {
       "name": "Shell",
@@ -83,7 +83,7 @@
   "by_bytes": [
     {
       "name": "HTML",
-      "bytes": 3142823
+      "bytes": 3143059
     },
     {
       "name": "TypeScript",
